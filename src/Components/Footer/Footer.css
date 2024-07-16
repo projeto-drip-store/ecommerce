@@ -1,0 +1,128 @@
+.rodape {
+    background-color: var(--cor_terciaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+}
+
+.rodape .sobre img {
+    width: 10rem;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.rodape .sobre p {
+    color: var(--cor_segundaria);
+    font-family: var(--font_primaria);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.rodape .icones img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.rodape .informacao {
+    width: 100%;
+    color: var(--cor_segundaria);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.rodape .informacao .informacao1 h4 {
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.rodape .informacao .informacao1 li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.rodape .informacao .informacao1 li a {
+    color: var(--cor_segundaria);
+    text-decoration: none;
+}
+
+.rodape .informacao .informacao2 h4 {
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.rodape .informacao .informacao2 li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.rodape .informacao .informacao2 li a {
+    color: var(--cor_segundaria);
+    text-decoration: none;
+}
+
+#contato {
+    background-color: var(--cor_terciaria);
+}
+
+.contatos {
+    color: var(--cor_segundaria);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 1rem;
+}
+
+.contatos h3 {
+    color: var(--cor_segundaria);
+    font-family: var(--font_primaria);
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contatos p {
+    color: var(--cor_segundaria);
+    font-family: var(--font_primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contatos h4 {
+    color: var(--cor_segundaria);
+    font-family: var(--font_primaria);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.barra {
+    height: 0.1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: var(--cor_segundaria);
+    border: none;
+    border-radius: 0.2rem;
+}
+
+footer {
+    height: 10vh;
+    font-family: var(--font_primaria);
+    background-color: var(--cor_terciaria);
+    color: var(--cor_segundaria);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1.2rem;
+}
