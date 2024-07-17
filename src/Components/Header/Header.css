@@ -4,13 +4,29 @@
     --font_primaria: "Inter", sans-serif;
     --font_weight_normal: 400;
     --font_weight_bold: 700;
-    --cor_primario: #C92071;
+
+    /* --cor_primario: #C92071;
     --cor_segundaria: #FFFFFF;
     --cor_terciaria: #000000;
     --cor_input: #666666;
     --cor_fundo: #F5F5F5;
     --cor_fundo_input_search: #F8F8F8;
-    --color_input: #A0A0A0;
+    --color_input: #A0A0A0; */
+
+    --primary: #C92071;
+    --secondary: #B5B6F2;
+    --tertiary: #991956;
+    --error: #EE4266;
+    --success: #52CA76;
+    --warning: #F6AA1C;
+
+    --dark-gray: #1F1F1F;
+    --dark-gray-2: #474747;
+    --dark-gray-3: #666666;
+    --light-gray: #8F8F8F;
+    --light-gray-2: #CCCCCC;
+    --light-gray-3: #F5F5F5;
+    --white: #FFFFFF;
 }
 
 * {
@@ -25,7 +41,7 @@ header {
 }
 
 nav {
-    background-color: var(--cor_segundaria);
+    background-color: var(--white);
     width: 100%;
     height: 21.33vh;
     display: flex;
@@ -59,8 +75,8 @@ nav a img {
     width: 38.81vw;
     height: 06.66vh;
     border-radius: 0.5rem;
-    background-color: var(--cor_fundo_input_search);
-    color: var(--color_input);
+    background-color: var(--light-gray-3);
+    color: var(--light-gray-2);
     font-size: 1rem;
     outline: none;
     border: none;
@@ -85,8 +101,8 @@ nav a img {
     width: 7.125rem;
     height: 2.5rem;
     border-radius: 0.5rem;
-    background-color: var(--cor_primario);
-    color: var(--cor_segundaria);
+    background-color: var(--primary);
+    color: var(--white);
     font-family: var(--font_primaria);
     font-weight: var(--font_weight_normal);
     font-size: 1rem;
@@ -119,8 +135,8 @@ nav a img {
 
 .nav-footer .home {
     font-weight: var(--font_weight_bold);
-    color: var(--cor_primario);
+    color: var(--primary);
     font-size: 1rem;
     padding-bottom: 0.3rem;
-    border-bottom: var(--cor_primario) 0.15rem solid;
+    border-bottom: var(--primary) 0.15rem solid;
 }
