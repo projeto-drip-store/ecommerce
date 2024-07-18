@@ -1,15 +1,15 @@
 import Header from "../Components/Header/Header"
 import Footer from "../Components/Footer/Footer"
 
-function ProductView() {
+function Sucesso() {
 
           return (
             <>
               <Header />
-                    <h1>ProductView</h1>
+                    <h1>Sucesso</h1>
               <Footer />
             </>
           )
         }
         
-export default ProductView
+export default Sucesso
