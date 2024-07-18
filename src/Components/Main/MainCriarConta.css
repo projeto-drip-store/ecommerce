@@ -1,20 +1,7 @@
-main {
-    background: linear-gradient(180deg, rgba(187, 188, 244, 1) 0%, rgba(206, 207, 248, 1) 100%);
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main .fotoSapatos img {
-    width: 0rem;
-}
-
 .formulario {
     background-color: var(--white);
     width: 84vw;
-    height: 60vh;
+    height: 45vh;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -233,16 +220,5 @@ main .fotoSapatos img {
         flex-direction: row;
         justify-content: center;
         gap: 1.3rem;
-    }
-}
-
-@media (min-width:1440px) {
-    main .fotoSapatos img {
-        width: 40vw;
-        height: auto;
-        margin-left: 4rem;
-        align-self: flex-end;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
     }
 }
