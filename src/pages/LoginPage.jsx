@@ -5,13 +5,13 @@ import Main from "../Components/Main/Main"
 
 function Login() {
 
-          return (
-            <>
-              <HeaderMenor />
-              <Main />
-              <Footer />
-            </>
-          )
-        }
-        
+  return (
+    <>
+      <HeaderMenor />
+      <Main />
+      <Footer />
+    </>
+  )
+}
+
 export default Login

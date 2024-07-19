@@ -25,13 +25,13 @@ function Main() {
           <div class="outrologin">
             <p>Ou faça login com</p>
             <div class="img">
-              <a href="#"><img src={ gmail } alt="gmail" /></a>
-              <a href="#"><img src={ facebook } alt="facebook" /></a>
+              <a href="#"><img src={gmail} alt="gmail" /></a>
+              <a href="#"><img src={facebook} alt="facebook" /></a>
             </div>
           </div>
         </div>
         <div class="fotoSapatos">
-          <img src={ sapatos } />
+          <img src={sapatos} />
         </div>
       </main>
     </>

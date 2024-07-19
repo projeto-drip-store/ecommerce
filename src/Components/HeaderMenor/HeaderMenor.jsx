@@ -7,8 +7,8 @@ function HeaderMenor() {
   return (
     <>
       <header>
-          <nav className="nav-menor">
-            <a href="#"><img src={ logo } alt="logo" /></a>
+        <nav className="nav-menor">
+          <a href="#"><img src={logo} alt="logo" /></a>
         </nav>
       </header>
     </>

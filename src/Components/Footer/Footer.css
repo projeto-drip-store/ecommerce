@@ -1,4 +1,8 @@
-.container {
+ol, ul {
+    padding-left: 0;
+}
+
+.container-footer {
     background-color: var(--black);
 }
 
@@ -50,14 +54,18 @@
     margin-bottom: 0.8rem;
 }
 
+
 .rodape .informacao .informacao1 li {
     list-style: none;
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 0.5rem;
 }
 
 .rodape .informacao .informacao1 li a {
     color: var(--white);
     text-decoration: none;
+    
 }
 
 .rodape .informacao .informacao2 h4 {
@@ -118,11 +126,11 @@
     background-color: var(--white);
     border: none;
     border-radius: 0.2rem;
-    
+
 }
 
 footer {
-    border:10px rgb(0, 0, 0) solid;
+    border: 10px rgb(0, 0, 0) solid;
     height: 10vh;
     font-family: var(--font_primaria);
     background-color: var(--black);
@@ -132,6 +140,7 @@ footer {
     align-items: flex-start;
     padding-top: 1.2rem;
 }
+
 @media (min-width:768px) and (max-width:1023px) {
     .rodape .sobre img {
         width: 15rem;
@@ -198,6 +207,7 @@ footer {
         padding-top: 3rem;
     }
 }
+
 @media (min-width:1024px) {
     .rodape {
         flex-direction: row;
@@ -228,6 +238,12 @@ footer {
     .rodape .informacao {
         width: 30vw;
         justify-content: space-around;
+        
+    }
+
+    .rodape .informacao .informacao1{
+        align-self: left;
+        text-align: left !important;
     }
 
     .rodape .informacao .informacao1 h4 {

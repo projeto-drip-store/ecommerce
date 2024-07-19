@@ -3,13 +3,13 @@ import Footer from "../Components/Footer/Footer"
 
 function CriarFormulario() {
 
-          return (
-            <>
-              <HeaderMenor />
-                    <h1>CriarFormulario</h1>
-              <Footer />
-            </>
-          )
-        }
-        
+  return (
+    <>
+      <HeaderMenor />
+      <h1>CriarFormulario</h1>
+      <Footer />
+    </>
+  )
+}
+
 export default CriarFormulario
