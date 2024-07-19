@@ -8,24 +8,24 @@ import iconTwitter from '../../assets/img/iconTwitter.svg';
 function Footer() {
   return (
     <>
-      <div className="container">
+      <div className="container-footer">
         <section id="contato">
           <div className="rodape">
             <div className="sobreIcones">
               <div className="sobre">
-                <a href="#"><img src={ logoDigitalCollege } alt="imagemlogo" /></a>
+                <a href="#"><img src={logoDigitalCollege} alt="imagemlogo" /></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
               </div>
               <div className="icones">
-                <a href="#"><img src={ iconFacebook } alt="facebook" /></a>
-                <a href="#"><img src={ iconInstagram } alt="instagram" /></a>
-                <a href="#"><img src={ iconTwitter } alt="twitter" /></a>
+                <a href="#"><img src={iconFacebook} alt="facebook" /></a>
+                <a href="#"><img src={iconInstagram} alt="instagram" /></a>
+                <a href="#"><img src={iconTwitter} alt="twitter" /></a>
               </div>
             </div>
             <div className="informacao">
               <div className="informacao1">
                 <h4>Informação</h4>
-                <ul>
+                <ul className="ul">
                   <li><a href="#">Sobre Drip Store</a></li>
                   <li><a href="#">Segurança</a></li>
                   <li><a href="#">Wishlist</a></li>

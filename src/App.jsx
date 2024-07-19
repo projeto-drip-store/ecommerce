@@ -18,17 +18,17 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={ <Home /> } />
-          <Route path="ProductList/" element={ <ProductList /> } />
-          <Route path="ProductView/" element={ <ProductView /> } />
-          <Route path="Cart/" element={ <Cart /> } />
-          <Route path="ConfirmarCompra/" element={ <ConfirmarCompra /> } />
-          <Route path="Sucesso/" element={ <Sucesso /> } />
-          <Route path="Login/" element={ <Login /> } />
-          <Route path="Criar/" element={ <Criar /> } />
-          <Route path="CriarFormulario/" element={ <CriarFormulario /> } />
-          <Route path="Pedidos/" element={ <Pedidos /> } />
-          <Route path="Informacoes/" element={ <Informacoes /> } />
+          <Route path="/" element={<Home />} />
+          <Route path="ProductList/" element={<ProductList />} />
+          <Route path="ProductView/" element={<ProductView />} />
+          <Route path="Cart/" element={<Cart />} />
+          <Route path="ConfirmarCompra/" element={<ConfirmarCompra />} />
+          <Route path="Sucesso/" element={<Sucesso />} />
+          <Route path="Login/" element={<Login />} />
+          <Route path="Criar/" element={<Criar />} />
+          <Route path="CriarFormulario/" element={<CriarFormulario />} />
+          <Route path="Pedidos/" element={<Pedidos />} />
+          <Route path="Informacoes/" element={<Informacoes />} />
         </Routes>
       </BrowserRouter>
     </>

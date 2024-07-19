@@ -159,13 +159,13 @@
     }
 
     main .fotoSapatos img {
-          width: 40vw;
-          height: auto;
-          margin-left: 4rem;
-          align-self: flex-end;
-          padding-top: 4rem;
-          padding-bottom: 4rem;
-     }
+        width: 40vw;
+        height: auto;
+        margin-left: 4rem;
+        align-self: flex-end;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 
     .formulario {
         width: 40vw;
