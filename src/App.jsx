@@ -1,3 +1,4 @@
+import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/HomePage";
 import ProductList from "./pages/ProductListingPage";
@@ -6,10 +7,11 @@ import Cart from "./pages/CartPage";
 import ConfirmarCompra from "./pages/ConfirmarCompraPage";
 import Sucesso from "./pages/PaginaDeSucessoPage";
 import Login from "./pages/LoginPage";
-import Criar from "./pages/CriarContaPage";
+import Registrar from "./pages/CriarContaPage";
 import CriarFormulario from "./pages/CriarFormularioPage";
 import Pedidos from "./pages/PedidosPage";
 import Informacoes from "./pages/InformacoesPage";
+import Error from "./pages/Error404";
 
 
 function App() {
@@ -25,10 +27,11 @@ function App() {
           <Route path="ConfirmarCompra/" element={<ConfirmarCompra />} />
           <Route path="Sucesso/" element={<Sucesso />} />
           <Route path="Login/" element={<Login />} />
-          <Route path="Criar/" element={<Criar />} />
+          <Route path="Registrar/" element={<Registrar />} />
           <Route path="CriarFormulario/" element={<CriarFormulario />} />
           <Route path="Pedidos/" element={<Pedidos />} />
           <Route path="Informacoes/" element={<Informacoes />} />
+          <Route path="Error/" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>

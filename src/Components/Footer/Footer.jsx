@@ -3,6 +3,7 @@ import logoDigitalCollege from '../../assets/img/logoDigitalCollege.svg';
 import iconFacebook from '../../assets/img/iconFacebook.svg';
 import iconInstagram from '../../assets/img/iconInstagram.svg';
 import iconTwitter from '../../assets/img/iconTwitter.svg';
+import { Link } from "react-router-dom";
 
 
 function Footer() {
@@ -13,35 +14,35 @@ function Footer() {
           <div className="rodape">
             <div className="sobreIcones">
               <div className="sobre">
-                <a href="#"><img src={logoDigitalCollege} alt="imagemlogo" /></a>
+                <Link to="/"><img src={logoDigitalCollege} alt="imagemlogo" /></Link>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
               </div>
               <div className="icones">
-                <a href="#"><img src={iconFacebook} alt="facebook" /></a>
-                <a href="#"><img src={iconInstagram} alt="instagram" /></a>
-                <a href="#"><img src={iconTwitter} alt="twitter" /></a>
+                <a href="https://www.facebook.com/digitalcollegebr/"><img src={iconFacebook} alt="facebook" /></a>
+                <a href="https://www.instagram.com/digitalcollegebr/"><img src={iconInstagram} alt="instagram" /></a>
+                <a href="https://x.com/eaicollegers"><img src={iconTwitter} alt="twitter" /></a>
               </div>
             </div>
             <div className="informacao">
               <div className="informacao1">
                 <h4>Informação</h4>
                 <ul className="ul">
-                  <li><a href="#">Sobre Drip Store</a></li>
-                  <li><a href="#">Segurança</a></li>
-                  <li><a href="#">Wishlist</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Trabalhe conosco</a></li>
-                  <li><a href="#">Meus Pedidos</a></li>
+                  <li><Link to="/Error">Sobre Drip Store</Link></li>
+                  <li><Link to="/Error">Segurança</Link></li>
+                  <li><Link to="/Error">Wishlist</Link></li>
+                  <li><Link to="/Error">Blog</Link></li>
+                  <li><Link to="/Error">Trabalhe conosco</Link></li>
+                  <li><Link to="/Pedidos">Meus Pedidos</Link></li>
                 </ul>
               </div>
               <div className="informacao2">
                 <h4>Categorias</h4>
                 <ul>
-                  <li><a href="#">Camisetas</a></li>
-                  <li><a href="#">Calças</a></li>
-                  <li><a href="#">Bonés</a></li>
-                  <li><a href="#">Headphones</a></li>
-                  <li><a href="#">Tênis</a></li>
+                  <li><Link to="/ProductList">Camisetas</Link></li>
+                  <li><Link to="/ProductList">Calças</Link></li>
+                  <li><Link to="/ProductList">Bonés</Link></li>
+                  <li><Link to="/ProductList">Headphones</Link></li>
+                  <li><Link to="/ProductList">Tênis</Link></li>
                 </ul>
               </div>
             </div>
@@ -59,6 +60,6 @@ function Footer() {
       </div>
     </>
   );
-};
+}
 
 export default Footer

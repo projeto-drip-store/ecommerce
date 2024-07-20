@@ -94,8 +94,8 @@ main .fotoSapatos img {
 }
 
 .formulario .conta button:hover {
-    background-color: var(--primary);
-    color: var(--black);
+    background-color: var(--tertiary) !important;
+    color: var(--white) !important;
 }
 
 .formulario .conta a {

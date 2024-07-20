@@ -1,6 +1,6 @@
 import "../HeaderMenor/HeaderMenor.css"
 import logo from '../../assets/img/logo.svg'
-
+import { Link } from "react-router-dom";
 
 function HeaderMenor() {
 
@@ -8,7 +8,7 @@ function HeaderMenor() {
     <>
       <header>
         <nav className="nav-menor">
-          <a href="#"><img src={logo} alt="logo" /></a>
+          <Link to="/"><img src={logo} alt="logo" /></Link>
         </nav>
       </header>
     </>
