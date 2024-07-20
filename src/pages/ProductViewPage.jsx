@@ -14,6 +14,13 @@ function ProductView() {
       <div className="product">
         <div>
           <img src={sapato_carrousel} alt="" className="carrosel" />
+          <div className="outrosTenis">
+            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
+            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
+            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
+            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
+            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
+          </div>
         </div>
         <div>
           <h3>Tenis Nike Revolution 6 Nature Masculino</h3>
@@ -49,13 +56,27 @@ function ProductView() {
           <button>Comprar</button>
         </div>
       </div>
-      <div className="outrosTenis">
-        <img src={sapato_carrousel} alt="foto quadrada" width={150} />
-        <img src={sapato_carrousel} alt="foto quadrada" width={150} />
-        <img src={sapato_carrousel} alt="foto quadrada" width={150} />
-        <img src={sapato_carrousel} alt="foto quadrada" width={150} />
-        <img src={sapato_carrousel} alt="foto quadrada" width={150} />
-      </div>
+      <section className="produtos_relacionados">
+        <h5 className="produtos">Produtos relacionados</h5>
+        <div className="cardpai">
+          <div className="cards">
+            <img src={sapato_carrousel} alt="foto quadrada" width={50} />
+            <h2>Card</h2>
+          </div>
+          <div className="cards">
+            <img src={sapato_carrousel} alt="foto quadrada" width={50} />
+            <h2>Card</h2>
+          </div>
+          <div className="cards">
+            <img src={sapato_carrousel} alt="foto quadrada" width={50} />
+            <h2>Card</h2>
+          </div>
+          <div className="cards">
+            <img src={sapato_carrousel} alt="foto quadrada" width={50} />
+            <h2>Card</h2>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </>

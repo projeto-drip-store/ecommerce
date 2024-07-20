@@ -1,19 +1,37 @@
 #preco {
-   font-size: 25px;
-   font-weight: bold;
- }
- #riscado {
-   text-decoration: line-through;
- }
- .carrosel {
-   width: 650px; /* Ajuste o tamanho conforme necessário */
-   height: auto; /* Mantém a proporção da imagem */
- }
- .product {
-   display: flex;
-   justify-content: flex-start;
- }
- img {
-   margin-right: 10px;
-   margin-top: 4%;
- }
+  font-size: 25px;
+  font-weight: bold;
+}
+#riscado {
+  text-decoration: line-through;
+}
+.carrosel {
+  width: 650px; /* Ajuste o tamanho conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+}
+.product {
+  display: flex;
+  justify-content: flex-start;
+}
+img {
+  margin-right: 10px;
+  margin-top: 4%;
+}
+.cardpai {
+  display: flex;
+  justify-content: space-between;
+}
+.cards {
+  border: solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produtos {
+  border: solid red;
+}
+.produtos_relacionados {
+  border: solid yellow;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
