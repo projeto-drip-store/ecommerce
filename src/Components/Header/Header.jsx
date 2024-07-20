@@ -1,6 +1,7 @@
 import "../Header/Header.css"
 import logo from '../../assets/img/logo.svg'
 import carrinho from '../../assets/img/carrinho.svg'
+import { Link } from "react-router-dom";
 
 function Header() {
 
@@ -10,17 +11,17 @@ function Header() {
         <nav>
           <div className="navs">
             <div className="nav-header">
-              <a href="#"><img src={logo} alt="logo" /></a>
+              <Link to="/"><img src={logo} alt="logo" /></Link>
               <input type="text" placeholder="Pesquisar produto..." className="input-icon-search" />
-              <a href="#">Cadastre-se</a>
-              <button type="button">Entrar</button>
-              <a href="#"><img src={carrinho} alt="carrinho" className="icon-carrinho" /></a>
+              <Link className="link-cadastro" to="/Registrar">Cadastre-se</Link>
+              <button type="button"><Link to="/Login">Entrar</Link></button>
+              <Link className="link-carrinho-nav" to="/Cart"><img src={carrinho} alt="carrinho" className="icon-carrinho" /></Link>
             </div>
             <div className="nav-footer">
-              <li><a href="#" className="home">Home</a></li>
-              <li><a href="#" className="produtos">Produtos</a></li>
-              <li><a href="#" className="categorias">Categorias</a></li>
-              <li><a href="#" className="pedidos">Meus Pedidos</a></li>
+              <li><Link to="/" className="nav-footer-home">Home</Link></li>
+              <li><Link to="/ProductList" className="nav-footer-produtos">Produtos</Link></li>
+              <li><Link to="/Error" className="nav-footer-categorias">Categorias</Link></li>
+              <li><Link to="/Pedidos" className="nav-footer-pedidos">Meus Pedidos</Link></li>
             </div>
           </div>
         </nav>

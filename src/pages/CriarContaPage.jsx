@@ -4,6 +4,7 @@ import "../Components/Main/MainCriarConta.css";
 import gmail from "../assets/img/gmail.svg";
 import facebook from "../assets/img/facebook.svg";
 import sapatos from "../assets/img/sapatosCriarConta.png";
+import { Link } from "react-router-dom";
 
 function Criar() {
 
@@ -11,25 +12,25 @@ function Criar() {
     <>
       <HeaderMenor />
       <main>
-        <div class="formulario">
-          <div class="title">
+        <div className="formulario">
+          <div className="title">
             <h1>Crie sua conta</h1>
-            <p>Já possui uma conta? Entre <a href="./login.html">aqui</a>.</p>
+            <p>Já possui uma conta? Entre <Link to="/Login">aqui</Link>.</p>
           </div>
-          <div class="conta">
+          <div className="conta">
             <h4>Email *</h4>
             <input type="email" placeholder="Insira seu email" />
             <button type="button">Criar Conta</button>
           </div>
-          <div class="outrologin">
+          <div className="outrologin">
             <p>Ou faça login com</p>
-            <div class="img">
-              <a href="#"><img src={gmail} alt="gmail" /></a>
-              <a href="#"><img src={facebook} alt="facebook" /></a>
+            <div className="img">
+              <Link to="https://www.google.com/intl/pt-BR/gmail/about/"><img src={gmail} alt="gmail" /></Link>
+              <Link to="https://www.facebook.com/"><img src={facebook} alt="facebook" /></Link>
             </div>
           </div>
         </div>
-        <div class="fotoSapatos">
+        <div className="fotoSapatos">
           <img src={sapatos} />
         </div>
       </main >

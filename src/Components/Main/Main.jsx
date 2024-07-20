@@ -1,4 +1,5 @@
 import "../Main/Main.css"
+import { Link } from "react-router-dom";
 import gmail from "../../assets/img/gmail.svg";
 import facebook from "../../assets/img/facebook.svg";
 import sapatos from "../../assets/img/sapatosCriarConta.png";
@@ -9,28 +10,28 @@ function Main() {
   return (
     <>
       <main>
-        <div class="formulario">
-          <div class="title">
+        <div className="formulario">
+          <div className="title">
             <h1>Acesse sua conta</h1>
-            <p>Novo cliente? Então registre-se <a href="./index.html">aqui</a>.</p>
+            <p>Novo cliente? Então registre-se <Link to="/Registrar">aqui</Link>.</p>
           </div>
-          <div class="conta">
+          <div className="conta">
             <h4>Login *</h4>
             <input type="text" placeholder="Insira seu login ou email" />
             <h4>Senha *</h4>
             <input type="text" placeholder="Insira sua senha" />
-            <a href="#">Esqueci minha senha</a>
+            <Link to="/Error">Esqueci minha senha</Link>
             <button type="button">Acessar Conta</button>
           </div>
-          <div class="outrologin">
+          <div className="outrologin">
             <p>Ou faça login com</p>
-            <div class="img">
-              <a href="#"><img src={gmail} alt="gmail" /></a>
-              <a href="#"><img src={facebook} alt="facebook" /></a>
+            <div className="img">
+              <Link to="https://www.google.com/intl/pt-BR/gmail/about/"><img src={gmail} alt="gmail" /></Link>
+              <Link to="https://www.facebook.com/"><img src={facebook} alt="facebook" /></Link>
             </div>
           </div>
         </div>
-        <div class="fotoSapatos">
+        <div className="fotoSapatos">
           <img src={sapatos} />
         </div>
       </main>
