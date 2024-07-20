@@ -1,0 +1,19 @@
+#preco {
+   font-size: 25px;
+   font-weight: bold;
+ }
+ #riscado {
+   text-decoration: line-through;
+ }
+ .carrosel {
+   width: 650px; /* Ajuste o tamanho conforme necessário */
+   height: auto; /* Mantém a proporção da imagem */
+ }
+ .product {
+   display: flex;
+   justify-content: flex-start;
+ }
+ img {
+   margin-right: 10px;
+   margin-top: 4%;
+ }
