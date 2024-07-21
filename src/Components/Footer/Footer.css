@@ -3,6 +3,7 @@ ol, ul {
 }
 
 .container-footer {
+    width: 100vw;
     background-color: var(--black);
 }
 
@@ -36,7 +37,7 @@ ol, ul {
 }
 
 .rodape .informacao {
-    width: 100%;
+    width: 100vw;
     color: var(--white);
     font-family: var(--font_primaria);
     font-weight: var(--font_weight_normal);

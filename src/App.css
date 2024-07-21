@@ -12,6 +12,7 @@
     --error: #EE4266;
     --success: #52CA76;
     --warning: #F6AA1C;
+    --verde_off: #E7FF86;
 
     --dark-gray: #1F1F1F;
     --dark-gray-2: #474747;
@@ -22,6 +23,8 @@
     --light-gray-4: #F8F8F8;
     --white: #FFFFFF;
     --black: #000000;
+    --fundo: #F9F8FE;
+
 }
 
 * {
