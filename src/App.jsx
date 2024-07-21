@@ -31,7 +31,7 @@ function App() {
           <Route path="CriarFormulario/" element={<CriarFormulario />} />
           <Route path="Pedidos/" element={<Pedidos />} />
           <Route path="Informacoes/" element={<Informacoes />} />
-          <Route path="Error/" element={<Error />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>

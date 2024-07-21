@@ -1,3 +1,9 @@
+body {
+    background-color: var(--fundo);
+    position: absolute;
+    z-index: -1;
+}
+
 main {
     background: linear-gradient(180deg, rgba(187, 188, 244, 1) 0%, rgba(206, 207, 248, 1) 100%);
     width: 100vw;

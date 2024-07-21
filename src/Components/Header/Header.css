@@ -1,6 +1,9 @@
 header {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: relative;
+    z-index: 1;
+    background-color: var(--white);
 }
 
 nav {
