@@ -227,6 +227,14 @@ footer {
         margin-bottom: 2.5rem;
     }
 
+    .icon-img {
+        transition: filter 0.3s ease;
+    }
+
+    .icon-img:hover {
+        filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(0deg) saturate(0%);
+    }
+
     .rodape .sobre p {
         width: 70%;
         line-height: 1.3rem;
@@ -239,7 +247,16 @@ footer {
     .rodape .informacao {
         width: 30vw;
         justify-content: space-around;
-        
+    }
+
+    .rodape .informacao a {
+        color: var(--white);
+        cursor: pointer;
+        transition: 0.5 ease;
+    }
+
+    .rodape .informacao a:hover {
+        filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(0deg) saturate(0%) !important;
     }
 
     .rodape .informacao .informacao1{

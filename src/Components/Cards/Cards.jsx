@@ -26,3 +26,5 @@ function Cards({ titulo, descricao, valorantigo, valoratual, foto }) {
 }
 
 export default Cards
+
+
