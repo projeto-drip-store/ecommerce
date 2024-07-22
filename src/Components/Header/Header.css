@@ -127,21 +127,21 @@ nav a img {
     border-bottom: var(--primary) 0.15rem solid;
 }
 
-.nav-footer .nav-footer-home {
+/* .nav-footer .nav-footer-home {
     font-weight: var(--font_weight_bold);
     color: var(--primary);
     font-size: 1rem;
     padding-bottom: 0.3rem;
     border-bottom: var(--primary) 0.15rem solid;
-}
+} */
 
-.nav-footer .nav-footer-home .selected{
+/* .nav-footer .nav-footer-home .selected{
     font-weight: var(--font_weight_bold);
     color: var(--primary);
     font-size: 1rem;
     padding-bottom: 0.3rem;
     border-bottom: var(--primary) 0.15rem solid;
-}
+} */
 
 .nav-footer .nav-footer-produtos .selected{
     font-weight: var(--font_weight_bold);
