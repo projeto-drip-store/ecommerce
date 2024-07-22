@@ -78,7 +78,7 @@ function ProductView() {
         </div>
       </section>
 
-      <Footer />
+      
     </>
   );
 }
