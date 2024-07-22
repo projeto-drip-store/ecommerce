@@ -187,7 +187,9 @@
 
 .input-filtrar-por[type="checkbox"],
 .input-filtrar-por[type="radio"] {
-          -webkit-appearance: none;
+          -webkit-appearance: none; /* Safari e Chrome */
+          -moz-appearance: none;    /* Firefox */
+          appearance: none;
           background-color: var(--white);
           border: 1px var(--black) solid;
 }
