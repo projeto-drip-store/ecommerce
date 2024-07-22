@@ -1,7 +1,14 @@
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import sapato_carrousel from "../assets/img/sapato_carousel.svg";
 import "../assets/css/ProductViewPage.css";
+import Cards2 from "../Components/Cards/Cards2";
+import Cards from "../Components/Cards/Cards";
+import sapato_carrousel from "../assets/img/sapato_carousel.svg";
+import sapatoAzul from "../assets/img/sapato_card.png";
+import Carousel from 'react-bootstrap/Carousel';
+
+
+
 //esse é o projeto atual
 function ProductView() {
   return (
@@ -13,16 +20,28 @@ function ProductView() {
       </p>
       <div className="product">
         <div>
-          <img src={sapato_carrousel} alt="" className="carrosel" />
           <div className="outrosTenis">
-            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
-            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
-            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
-            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
-            <img src={sapato_carrousel} alt="foto quadrada" width={150} />
+            <Carousel className="carroselProductView" >
+              <Carousel.Item className="itemDoCarrossel">
+                <img src={sapatoAzul} />
+              </Carousel.Item>
+              <Carousel.Item className="itemDoCarrossel">
+                <img src={sapatoAzul} />
+              </Carousel.Item>
+              <Carousel.Item className="itemDoCarrossel">
+                <img src={sapatoAzul} />
+              </Carousel.Item>
+            </Carousel>
+            <div className="galery">
+              <div className="galery1"><img src={sapatoAzul} alt="" /></div>
+              <div className="galery2"><img src={sapatoAzul} alt="" /></div>
+              <div className="galery3"><img src={sapatoAzul} alt="" /></div>
+              <div className="galery4"><img src={sapatoAzul} alt="" /></div>
+              <div className="galery5"><img src={sapatoAzul} alt="" /></div>
+            </div>
           </div>
         </div>
-        <div>
+        <div className="buyBox">
           <h3>Tenis Nike Revolution 6 Nature Masculino</h3>
           <p>Casual | Nike | REF:38416711</p>
           <p>
@@ -37,48 +56,37 @@ function ProductView() {
           </p>
           <div className="corTamanho">
             <h6>Tamanho</h6>
-            <div>
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
+            <div className="escolherTamanhos">
+              <div className="numeracoesDosProdutos">39</div>
+              <div className="numeracoesDosProdutos">40</div>
+              <div className="numeracoesDosProdutos">41</div>
+              <div className="numeracoesDosProdutos">42</div>
+              <div className="numeracoesDosProdutos">43</div>
             </div>
-            <div>
-              <h6>cor</h6>
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-              <img src={sapato_carrousel} alt="foto quadrada" width={50} />
+            <div className="escolherTamanhos">
+              <h6 >cor</h6>
+              <div className="coresDosProdutos"></div>
+              <div className="coresDosProdutos"></div>
+              <div className="coresDosProdutos"></div>
+              <div className="coresDosProdutos"></div>
+              <div className="coresDosProdutos"></div>
             </div>
           </div>
-          <button>Comprar</button>
+          <button className="botaoCompraProductView">Comprar</button>
         </div>
       </div>
+
       <section className="produtos_relacionados">
         <h5 className="produtos">Produtos relacionados</h5>
-        <div className="cardpai">
-          <div className="cards">
-            <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-            <h2>Card</h2>
-          </div>
-          <div className="cards">
-            <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-            <h2>Card</h2>
-          </div>
-          <div className="cards">
-            <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-            <h2>Card</h2>
-          </div>
-          <div className="cards">
-            <img src={sapato_carrousel} alt="foto quadrada" width={50} />
-            <h2>Card</h2>
-          </div>
+        <div className="produto-em-alta-cards">
+          <Cards2 oferta="30" foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
+          <Cards2 oferta="40" foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
+          <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
+          <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
         </div>
       </section>
 
-      
+      <Footer />
     </>
   );
 }
