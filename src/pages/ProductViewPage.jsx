@@ -3,9 +3,8 @@ import Footer from "../Components/Footer/Footer";
 import "../assets/css/ProductViewPage.css";
 import Cards2 from "../Components/Cards/Cards2";
 import Cards from "../Components/Cards/Cards";
-import sapato_carrousel from "../assets/img/sapato_carousel.svg";
+
 import sapatoAzul from "../assets/img/sapato_card.png";
-import Carousel from 'react-bootstrap/Carousel';
 
 
 
@@ -19,8 +18,8 @@ function ProductView() {
         Masculino
       </p>
       <div className="product">
-        <div>
-          <div className="outrosTenis">
+        <div className="carousel-cards-tenis">
+          {/* <div className="outrosTenis">
             <Carousel className="carroselProductView" >
               <Carousel.Item className="itemDoCarrossel">
                 <img src={sapatoAzul} />
@@ -32,14 +31,14 @@ function ProductView() {
                 <img src={sapatoAzul} />
               </Carousel.Item>
             </Carousel>
-            <div className="galery">
+          </div> */}
+          <div className="galery">
               <div className="galery1"><img src={sapatoAzul} alt="" /></div>
               <div className="galery2"><img src={sapatoAzul} alt="" /></div>
               <div className="galery3"><img src={sapatoAzul} alt="" /></div>
               <div className="galery4"><img src={sapatoAzul} alt="" /></div>
               <div className="galery5"><img src={sapatoAzul} alt="" /></div>
             </div>
-          </div>
         </div>
         <div className="buyBox">
           <h3>Tenis Nike Revolution 6 Nature Masculino</h3>
