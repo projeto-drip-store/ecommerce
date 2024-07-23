@@ -11,23 +11,19 @@
   background-color: var(--light-gray-4);
   width: 703px;
   height: 571px;
-  
+
 }
-.itemDoCarrossel{
+
+.itemDoCarrossel {
   display: flex;
   justify-content: center;
-  
+
 }
 
 .product {
   display: flex;
   justify-content: flex-start;
   border: solid blueviolet;
-}
-
-img {
-  margin-right: 10px;
-  margin-top: 4%;
 }
 
 .cardpai {
@@ -42,9 +38,6 @@ img {
   align-items: center;
 }
 
-/* .produtos {
-  /* border: solid red; */
-/* } */
 .produtos_relacionados {
   /* border: solid yellow; */
   padding-left: 5rem;
@@ -80,11 +73,13 @@ img {
 #teste {
   width: 20vw;
 }
-.galery{
+
+.galery {
   display: flex;
   justify-content: space-around;
 }
-.galery img{
+
+.galery img {
   width: 117.81px;
   height: 96px;
   top: 865px;
@@ -92,31 +87,38 @@ img {
   gap: 0px;
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
-  
+
 }
-.galery1{
+
+.galery1 {
   background-color: aqua;
 }
-.galery2{
+
+.galery2 {
   background-color: rgb(251, 0, 255);
 }
-.galery3{
+
+.galery3 {
   background-color: rgb(16, 3, 255);
 }
-.galery4{
+
+.galery4 {
   background-color: rgb(90, 255, 90);
 }
-.galery5{
+
+.galery5 {
   background-color: rgb(249, 90, 54);
 }
-.escolherTamanhos{
+
+.escolherTamanhos {
   display: flex;
   justify-content: flex-start;
   gap: 1.4rem;
-  
+
 
 }
-.numeracoesDosProdutos{
+
+.numeracoesDosProdutos {
   border: solid var(--dark-gray-2);
   border-radius: 0.2rem;
   width: 48px;
@@ -125,7 +127,8 @@ img {
   justify-content: center;
   align-items: center;
 }
-.coresDosProdutos{
+
+.coresDosProdutos {
   background-color: aqua;
   border-radius: 2rem;
   text-decoration: none;
