@@ -13,10 +13,11 @@
   display: flex;
   justify-content: flex-start;
 }
-img {
+/* img {
   margin-right: 10px;
   margin-top: 4%;
-}
+  border: 1px red solid;
+}  */
 .cardpai {
   display: flex;
   justify-content: space-between;
