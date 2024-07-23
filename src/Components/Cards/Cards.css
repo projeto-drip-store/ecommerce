@@ -1,9 +1,9 @@
 .cards-produtos {
-          width: 20.27vw;
+          max-width: 20.27vw;
           height: 48.77vh;
           position: relative;
           z-index: 1;
-          transition: transform 0.3s ease;
+          transition: 0.3s ease;
 }
 
 .cards-produtos:hover {
