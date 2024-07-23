@@ -21,38 +21,40 @@ function CarouselMenor() {
             aria-label="Slide 5"></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active  primeiro" data-bs-interval="2000">
-            <div className="carousel-item-row-product-view">
-              <div className="imagem-ilustrativa-product-view">
-                <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+          <div className="cards-carousel">
+            <div className="carousel-item active  primeiro" data-bs-interval="2000">
+              <div className="carousel-item-row-product-view">
+                <div className="imagem-ilustrativa-product-view">
+                  <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="carousel-item segundo" data-bs-interval="2000">
-            <div className="carousel-item-row-product-view">
-              <div className="imagem-ilustrativa-product-view">
-                <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+            <div className="carousel-item segundo" data-bs-interval="2000">
+              <div className="carousel-item-row-product-view">
+                <div className="imagem-ilustrativa-product-view">
+                  <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="carousel-item terceiro" data-bs-interval="2000">
-            <div className="carousel-item-row-product-view">
-              <div className="imagem-ilustrativa-product-view">
-                <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+            <div className="carousel-item terceiro" data-bs-interval="2000">
+              <div className="carousel-item-row-product-view">
+                <div className="imagem-ilustrativa-product-view">
+                  <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="carousel-item quarto" data-bs-interval="2000">
-            <div className="carousel-item-row-product-view">
-              <div className="imagem-ilustrativa-product-view">
-                <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+            <div className="carousel-item quarto" data-bs-interval="2000">
+              <div className="carousel-item-row-product-view">
+                <div className="imagem-ilustrativa-product-view">
+                  <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="carousel-item quinto" data-bs-interval="2000">
-            <div className="carousel-item-row-product-view">
-              <div className="imagem-ilustrativa-product-view">
-                <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+            <div className="carousel-item quinto" data-bs-interval="2000">
+              <div className="carousel-item-row-product-view">
+                <div className="imagem-ilustrativa-product-view">
+                  <img src={tenisNike} className="d-block sapato-product-view" alt="sapato" />
+                </div>
               </div>
             </div>
           </div>

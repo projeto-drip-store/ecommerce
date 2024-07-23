@@ -3,6 +3,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../Carousel/Carousel.css";
 import sapato from "../../assets/img/sapato_carousel.svg";
 import ilustracao from "../../assets/img/ornament.svg";
+import fire from "../../assets/img/fire.png";
 import { Link } from "react-router-dom";
 
 function Carousel() {
@@ -26,7 +27,7 @@ function Carousel() {
               <div className="hero">
                 <div className="texto-ofertas">
                   <h6 className="sub-titulo">Melhores ofertas personalizadas</h6>
-                  <h1 className="titulo">Queima de stoque Nike 🔥</h1>
+                  <h1 className="titulo">Queima de stoque Nike <img src={fire} alt="fire" /></h1>
                   <p className="texto">
                     Consequat culpa exercitation mollit nisi excepteur do do
                     tempor laboris eiusmod irure consectetur.
@@ -45,7 +46,7 @@ function Carousel() {
               <div className="hero">
                 <div className="texto-ofertas">
                   <h6 className="sub-titulo">Melhores ofertas personalizadas</h6>
-                  <h1 className="titulo">Queima de stoque Nike 🔥</h1>
+                  <h1 className="titulo">Queima de stoque Nike <img src={fire} alt="fire" /></h1>
                   <p className="texto">
                     Consequat culpa exercitation mollit nisi excepteur do do
                     tempor laboris eiusmod irure consectetur.
@@ -64,7 +65,7 @@ function Carousel() {
               <div className="hero">
                 <div className="texto-ofertas">
                   <h6 className="sub-titulo">Melhores ofertas personalizadas</h6>
-                  <h1 className="titulo">Queima de stoque Nike 🔥</h1>
+                  <h1 className="titulo">Queima de stoque Nike <img src={fire} alt="fire" /></h1>
                   <p className="texto">
                     Consequat culpa exercitation mollit nisi excepteur do do
                     tempor laboris eiusmod irure consectetur.
@@ -83,7 +84,7 @@ function Carousel() {
               <div className="hero">
                 <div className="texto-ofertas">
                   <h6 className="sub-titulo">Melhores ofertas personalizadas</h6>
-                  <h1 className="titulo">Queima de stoque Nike 🔥</h1>
+                  <h1 className="titulo">Queima de stoque Nike <img src={fire} alt="fire" /></h1>
                   <p className="texto">
                     Consequat culpa exercitation mollit nisi excepteur do do
                     tempor laboris eiusmod irure consectetur.
