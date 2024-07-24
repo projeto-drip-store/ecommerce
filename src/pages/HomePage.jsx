@@ -6,6 +6,7 @@ import Cards2 from "../Components/Cards/Cards2"
 import IconDestaque from "../Components/IconDestaque/IconDestaque"
 import sapatoAzul from "../assets/img/sapato_card.png"
 import flechaRosa from "../assets/img/flecha_icon.svg"
+import CardDestaque from "../Components/CardDestaque/CardDestaque"
 import "./HomePage.css"
 import { Link } from "react-router-dom";
 import { Destaque } from "../Components/Destaque/Destaque"
@@ -16,6 +17,7 @@ function Home() {
     <>
       <Header />
       <Carousel />
+      <CardDestaque/>
       <IconDestaque />
       <section className="container-produtos-em-alta">
         <div className="produtos-em-alta">

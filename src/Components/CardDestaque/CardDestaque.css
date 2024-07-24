@@ -1,0 +1,67 @@
+.cards-de-ofertas{
+      border: red solid;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+}
+
+.card-de-oferta-blusa{
+    width:25.31rem ;
+    height:15.68rem ;
+    background-color: #DBE3F2;
+    display: flex;
+    flex-direction:row ;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.card-de-oferta-blusa .oferta{
+    width: 6rem;
+    height: 2rem;
+    background-color: #E7FF86;
+    border-radius: 1.81rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-family: var(--font_primary);
+    font-weight: var(--font_weight_bold);
+
+}
+
+.card-de-oferta-blusa .oferta h3{
+    font-size: 0.875rem;
+    align-self: center;
+    margin-top: 0.7rem;
+}
+
+.card-de-oferta-blusa h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card-de-oferta-blusa button{
+    width: 9.56rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: #F5F5F5;
+    border: none;
+}
+
+
+.card-de-oferta-blusa .button{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #C92071;
+
+}
+
+.informacao {
+    align-self: center;
+}
+
+.blusa {
+    width: 14rem;
+}
