@@ -1,3 +1,7 @@
+.corpo-product-view {
+  padding: 5rem;
+}
+
 #preco {
   font-size: 25px;
   font-weight: bold;
@@ -77,6 +81,7 @@
 .galery {
   display: flex;
   justify-content: space-around;
+  gap: 1.5rem;
 }
 
 .galery img {
@@ -91,31 +96,81 @@
 }
 
 .galery1 {
-  background-color: aqua;
+  background-color: #E2E3FF;
+  width: 117.81px;
+  height: 96px;
+  top: 865px;
+  left: 100px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+
 }
 
 .galery2 {
-  background-color: rgb(251, 0, 255);
+  background-color: #FFE8BC;
+  width: 117.81px;
+  height: 96px;
+  top: 865px;
+  left: 100px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+
 }
 
 .galery3 {
-  background-color: rgb(16, 3, 255);
+  background-color: #FFC0BC;
+  width: 117.81px;
+  height: 96px;
+  top: 865px;
+  left: 100px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+
 }
 
 .galery4 {
-  background-color: rgb(90, 255, 90);
+  background-color: #DEC699;
+  width: 117.81px;
+  height: 96px;
+  top: 865px;
+  left: 100px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+
 }
 
 .galery5 {
-  background-color: rgb(249, 90, 54);
+  background-color: #E8DFCF;
+  width: 117.81px;
+  height: 96px;
+  top: 865px;
+  left: 100px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+
 }
 
 .escolherTamanhos {
   display: flex;
   justify-content: flex-start;
   gap: 1.4rem;
+}
 
-
+.escolher-cor {
+  width: 186px;
+  height: 71px;
+  top: 701px;
+  left: 841px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.4rem;
 }
 
 .numeracoesDosProdutos {
@@ -129,7 +184,33 @@
 }
 
 .coresDosProdutos {
-  background-color: aqua;
-  border-radius: 2rem;
-  text-decoration: none;
+  border: solid var(--dark-gray-2);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-selecionar-cor {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.button-cor-1 {
+  background-color: #6FEEFF;
+}
+
+.button-cor-2 {
+  background-color: #FF6969;
+}
+
+.button-cor-3 {
+  background-color: #5E5E5E;
+}
+
+.button-cor-4 {
+  background-color: #6D70B7;
 }
