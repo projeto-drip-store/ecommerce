@@ -8,7 +8,7 @@ function Error() {
       <section className="main-error">
         <div className="corpo-error">
           <h1 className="error">Error 404</h1>
-          <button className="error-voltar"><Link to="/ProductList">Voltar para Home</Link></button>
+          <button className="error-voltar"><Link to="/">Voltar para Home</Link></button>
         </div>
       </section>
     </>

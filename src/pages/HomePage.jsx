@@ -3,10 +3,12 @@ import Carousel from "../Components/Carousel/Carousel"
 import Footer from "../Components/Footer/Footer"
 import Cards from "../Components/Cards/Cards"
 import Cards2 from "../Components/Cards/Cards2"
+import IconDestaque from "../Components/IconDestaque/IconDestaque"
 import sapatoAzul from "../assets/img/sapato_card.png"
 import flechaRosa from "../assets/img/flecha_icon.svg"
 import "./HomePage.css"
 import { Link } from "react-router-dom";
+import { Destaque } from "../Components/Destaque/Destaque"
 
 function Home() {
 
@@ -14,35 +16,7 @@ function Home() {
     <>
       <Header />
       <Carousel />
-      <section className="colecao-destaque-icons">
-        <div className="colecao-destaque-icons-escopo">
-          <div className="titulo-colecao-destaque">
-            <h1>Coleções em destaque</h1>
-          </div>
-          <div className="cards-colecao-destaque">
-            <div className="blusa-destaque">
-              <img src="" alt="blusa"/>
-              <h4>Camisetas</h4>
-            </div>
-            <div className="calcas-destaque">
-              <img src="" alt="blusa"/>
-              <h4>Camisetas</h4>
-            </div>
-            <div className="bone-destaque">
-              <img src="" alt="blusa"/>
-              <h4>Camisetas</h4>
-            </div>
-            <div className="headphone-destaque">
-              <img src="" alt="blusa"/>
-              <h4>Camisetas</h4>
-            </div>
-            <div className="tenis-destaque">
-              <img src="" alt="blusa"/>
-              <h4>Camisetas</h4>
-            </div>
-          </div>
-        </div>
-      </section>
+      <IconDestaque />
       <section className="container-produtos-em-alta">
         <div className="produtos-em-alta">
           <div className="topico-section">
@@ -65,6 +39,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Destaque/>
       <Footer />
     </>
   )
