@@ -1,8 +1,77 @@
-# React + Vite
+# DripStore - Site Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Desenvolvido por:
+- **Jefferson da Silva Guedes** - Líder e Fullstack
+- **João Victor** - Vice-líder e Back-end
+- **Karol** - Front-end
+- **Vitória** - Front-end
 
-Currently, two official plugins are available:
+## Descrição do Projeto
+O site DripStore foi desenvolvido criando toda uma estrutura de pages com um total de 11 páginas, das quais 5 foram implementadas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto foi construído utilizando as seguintes tecnologias:
+- HTML
+- CSS
+- React
+- Bootstrap
+- Axios
+- NPM
+- Node.js
+
+O site faz uso de components para reutilização de código, props para utilização dos mesmos components com diferentes informações e hooks para consumo de API do MockAPI, sendo usado nos components cards.
+
+## Estrutura de Pastas
+
+```plaintext
+├── src/
+|     └── assets/
+|          └── favicon
+|          └── img
+│   ├── components/
+│   │   ├── CardDestaque
+│   │   ├── Cards
+│   │   ├── Carousel
+│   │   ├── CarouselMenor
+│   │   ├── Destaque
+│   │   ├── Footer
+│   │   ├── Header
+│   │   ├── HeaderMenor
+│   │   ├── IconDestaque
+│   │   └── Main
+│   └── pages/
+│       ├── CartPage
+│       ├── ConfirmarCompraPage
+│       └── CriarContaPage
+│       └── CriarFormularioPage
+│       └── Error404
+│       ├── HomePage
+│       ├── InformacoesPage
+│       └── LoginPage
+│       └── PaginaDeSucessoPage
+│       └── PedidosPage
+│       └── ProductListingPage
+│       └── ProductViewPage
+├── App.css
+├── App.jsx
+├── Main.jsx
+└── index.html
+
+## Cores do Site
+
+As cores do site estão cadastradas no root do `App.css`:
+
+- **Primary**: #C92071
+- **Secondary**: #B5B6F2
+- **Tertiary**: #991956
+- **Error**: #EE4266
+- **Success**: #52CA76
+- **Warning**: #F6AA1C
+
+### Grayscale
+- **Dark-gray**: #1F1F1F
+- **Dark-gray-2**: #474747
+- **Dark-gray-3**: #666666
+- **Light-gray**: #8F8F8F
+- **Light-gray-2**: #CCCCCC
+- **Light-gray-3**: #F5F5F5
+- **White**: #FFFFFF
