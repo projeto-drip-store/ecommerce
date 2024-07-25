@@ -2,9 +2,9 @@
 
 ## Desenvolvido por:
 - **Jefferson da Silva Guedes** - Líder e Fullstack
-- **João Victor** - Vice-líder e Back-end
-- **Karol** - Front-end
-- **Vitória** - Front-end
+- **João Victor Silva Sousa** - Vice-líder e Back-end
+- **Ana Karoline Queiroz dos Santos** - Front-end
+- **Vitória Lindaiane Costa dos Santos** - Front-end
 
 ## Descrição do Projeto
 O site DripStore foi desenvolvido criando toda uma estrutura de pages com um total de 11 páginas, das quais 5 foram implementadas.
