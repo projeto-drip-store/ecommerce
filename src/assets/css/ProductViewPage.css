@@ -42,23 +42,11 @@
 .product {
   display: flex;
   justify-content: flex-start;
-  border: solid blueviolet;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .produtos_relacionados {
-  /* border: solid yellow; */
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.outrosTenis {
   border: solid yellow;
+  padding: 5rem;
 }
 
 .buyBox {
@@ -81,10 +69,6 @@
   border-radius: 0.5rem;
   outline: none;
   border: none;
-}
-
-#teste {
-  width: 20vw;
 }
 
 .galery {
