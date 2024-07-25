@@ -1,14 +1,13 @@
-import "./HomePage.css"
+// import "./HomePage.css"
 import "./ProductListingPage.css"
-import Header from "../Components/Header/Header"
-import Footer from "../Components/Footer/Footer"
-import Cards from "../Components/Cards/Cards"
-import Cards2 from "../Components/Cards/Cards2"
-import sapatoAzul from "../assets/img/sapato_card.png"
-import setaParaBaixo from "../assets/img/seta_para_baixo.png"
+import Header from "../../Components/Header/Header"
+import Footer from "../../Components/Footer/Footer"
+import Cards from "../../Components/Cards/Cards"
+import Cards2 from "../../Components/Cards/Cards2"
+import sapatoAzul from "../../assets/img/sapato_card.png"
+import setaParaBaixo from "../../assets/img/seta_para_baixo.png"
 
 function ProductList() {
-
   return (
     <>
       <Header />
@@ -123,7 +122,6 @@ function ProductList() {
             </div>
           </div>
         </div>
-
       </section>
       <Footer />
     </>

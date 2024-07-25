@@ -1,11 +1,10 @@
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
-import "../assets/css/ProductViewPage.css";
-import Cards2 from "../Components/Cards/Cards2";
-import Cards from "../Components/Cards/Cards";
-import Carrousel from "../Components/CarouselMenor/CarouselMenor";
-
-import sapatoAzul from "../assets/img/sapato_card.png";
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
+import "./ProductViewPage.css";
+import Cards2 from "../../Components/Cards/Cards2";
+import Cards from "../../Components/Cards/Cards";
+import Carrousel from "../../Components/CarouselMenor/CarouselMenor";
+import sapatoAzul from "../../assets/img/sapato_card.png";
 
 //esse é o projeto atual
 function ProductView() {
