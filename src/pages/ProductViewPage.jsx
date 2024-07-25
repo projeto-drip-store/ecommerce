@@ -43,7 +43,9 @@ function ProductView() {
           </div>
           <div className="buyBox">
             <h3>Tenis Nike Revolution 6 Nature Masculino</h3>
-            <p>Casual | Nike | REF:38416711</p>
+            <p className="referencia-do-produto">
+              Casual | Nike | REF:38416711
+            </p>
             <p>
               R$ <span id="preco">219,90</span> <span id="riscado">219,00</span>
             </p>

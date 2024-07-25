@@ -18,6 +18,19 @@
   letter-spacing: 0.25px;
   text-align: left;
 }
+.referencia-do-produto {
+  color: #8f8f8f;
+}
+
+.corpo-product-view h6 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: var(--dark-gray-3);
+}
 
 #preco {
   font-size: 25px;
@@ -26,6 +39,10 @@
 
 #riscado {
   text-decoration: line-through;
+}
+
+.buyBox h6 {
+  color: var(--light-gray);
 }
 
 .carroselProductView {
@@ -45,7 +62,6 @@
 }
 
 .produtos_relacionados {
-  border: solid yellow;
   padding: 5rem;
 }
 
