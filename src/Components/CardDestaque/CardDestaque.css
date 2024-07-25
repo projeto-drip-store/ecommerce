@@ -1,5 +1,4 @@
 .cards-de-ofertas{
-      border: red solid;
       display: flex;
       justify-content: center;
       gap: 1rem;

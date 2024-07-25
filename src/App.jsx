@@ -1,17 +1,17 @@
 import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/HomePage";
-import ProductList from "./pages/ProductListingPage";
-import ProductView from "./pages/ProductViewPage";
-import Cart from "./pages/CartPage";
-import ConfirmarCompra from "./pages/ConfirmarCompraPage";
-import Sucesso from "./pages/PaginaDeSucessoPage";
-import Login from "./pages/LoginPage";
-import Registrar from "./pages/CriarContaPage";
-import CriarFormulario from "./pages/CriarFormularioPage";
-import Pedidos from "./pages/PedidosPage";
-import Informacoes from "./pages/InformacoesPage";
-import Error from "./pages/Error404";
+import Home from "./pages/HomePage/HomePage";
+import ProductList from "./pages/ProductListingPage/ProductListingPage";
+import ProductView from "./pages/ProductViewPage/ProductViewPage";
+import Cart from "./pages/CartPage/CartPage";
+import ConfirmarCompra from "./pages/ConfirmarCompraPage/ConfirmarCompraPage";
+import Sucesso from "./pages/PaginaDeSucessoPage/PaginaDeSucessoPage";
+import Login from "./pages/LoginPage/LoginPage";
+import Registrar from "./pages/CriarContaPage/CriarContaPage";
+import CriarFormulario from "./pages/CriarFormularioPage/CriarFormularioPage";
+import Pedidos from "./pages/PedidosPage/PedidosPage";
+import Informacoes from "./pages/InformacoesPage/InformacoesPage";
+import Error from "./pages/Error404/Error404";
 
 
 function App() {
