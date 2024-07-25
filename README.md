@@ -55,6 +55,7 @@ O site faz uso de components para reutilização de código, props para utiliza�
 ├── App.jsx
 ├── Main.jsx
 └── index.html
+```
 
 ## Cores do Site
 
@@ -75,3 +76,4 @@ As cores do site estão cadastradas no root do `App.css`:
 - **Light-gray-2**: #CCCCCC
 - **Light-gray-3**: #F5F5F5
 - **White**: #FFFFFF
+
