@@ -5,9 +5,29 @@ import Cards2 from "../../Components/Cards/Cards2";
 import Cards from "../../Components/Cards/Cards";
 import Carrousel from "../../Components/CarouselMenor/CarouselMenor";
 import sapatoAzul from "../../assets/img/sapato_card.png";
+import { useState, useEffect } from "react"
+import axios from "axios"
 
 //esse é o projeto atual
 function ProductView() {
+  const [character, setCharacter] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("https://669111dd26c2a69f6e8e4d94.mockapi.io/products/products")
+        setCharacter(response.data)
+        console.log("API response:", response.data);
+        setLoading(false)
+        console.log(`deu certo`)
+      } catch (error) {
+        console.log(`o erro foi ${error}`)
+        setLoading(false)
+      }
+    }
+    fetchData();
+  }, [])
+
   return (
     <>
       <Header />
@@ -88,36 +108,28 @@ function ProductView() {
       <section className="produtos_relacionados">
         <h5>Produtos relacionados</h5>
         <div className="produto-em-alta-cards">
-          <Cards2
-            oferta="30"
-            foto={sapatoAzul}
-            titulo="Tênis"
-            descricao="K-Swiss V8 - Masculino"
-            valorantigo="200"
-            valoratual="100"
-          />
-          <Cards2
-            oferta="40"
-            foto={sapatoAzul}
-            titulo="Tênis"
-            descricao="K-Swiss V8 - Masculino"
-            valorantigo="200"
-            valoratual="100"
-          />
-          <Cards
-            foto={sapatoAzul}
-            titulo="Tênis"
-            descricao="K-Swiss V8 - Masculino"
-            valorantigo="200"
-            valoratual="100"
-          />
-          <Cards
-            foto={sapatoAzul}
-            titulo="Tênis"
-            descricao="K-Swiss V8 - Masculino"
-            valorantigo="200"
-            valoratual="100"
-          />
+          {Array.isArray(character) && character.slice(0, 4).map(card => (
+            card.desconto === true ? (
+              <Cards2
+                key={card.id}
+                oferta={card.valordesconto}
+                foto={sapatoAzul}
+                titulo={card.titulo}
+                descricao={card.descricao}
+                valorantigo={card.valorantigo}
+                valoratual={card.valoratual}
+              />
+            ) : (
+              <Cards
+                key={card.id}
+                foto={sapatoAzul}
+                titulo={card.titulo}
+                descricao={card.descricao}
+                valorantigo={card.valorantigo}
+                valoratual={card.valoratual}
+              />
+            )
+          ))}
         </div>
       </section>
 

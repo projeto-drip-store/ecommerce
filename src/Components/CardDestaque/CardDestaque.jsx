@@ -8,7 +8,7 @@ function CardDestaque() {
     return (
         <>
             <section>
-                <h1>Coleções em destaque</h1>
+                <h1 className="titulo-colecao">Coleções em destaque</h1>
                 <div className="cards-de-ofertas">
                     <div className="card-de-oferta-blusa">
                         <div className="informacao">
@@ -29,7 +29,7 @@ function CardDestaque() {
                             <div className="oferta">
                                 <h3>30% OFF</h3>
                             </div>
-                            <h2>Novo drop <br /> Supreme</h2>
+                            <h2>Coleção <br /> Adidas</h2>
                             <button>
                                 <a className="button" href="">Comprar</a>
                             </button>
@@ -43,7 +43,7 @@ function CardDestaque() {
                             <div className="oferta">
                                 <h3>30% OFF</h3>
                             </div>
-                            <h2>Novo drop <br /> Supreme</h2>
+                            <h2>Novo <br /> Beats Bass</h2>
                             <button>
                                 <a className="button" href="">Comprar</a>
                             </button>

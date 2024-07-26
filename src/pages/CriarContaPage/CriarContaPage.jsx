@@ -3,7 +3,7 @@ import Footer from "../../Components/Footer/Footer";
 import "../../Components/Main/MainCriarConta.css";
 import gmail from "../../assets/img/gmail.svg";
 import facebook from "../../assets/img/facebook.svg";
-import sapatos from "../../assets/img/sapatosCriarConta.png";
+import sapatos from "../../assets/img/dois_tenis_nike.png";
 import { Link } from "react-router-dom";
 
 function Criar() {

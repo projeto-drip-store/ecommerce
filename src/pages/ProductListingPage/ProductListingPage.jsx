@@ -6,8 +6,28 @@ import Cards from "../../Components/Cards/Cards"
 import Cards2 from "../../Components/Cards/Cards2"
 import sapatoAzul from "../../assets/img/sapato_card.png"
 import setaParaBaixo from "../../assets/img/seta_para_baixo.png"
+import { useState, useEffect } from "react"
+import axios from "axios"
 
 function ProductList() {
+  const [character, setCharacter] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("https://669111dd26c2a69f6e8e4d94.mockapi.io/products/products")
+        setCharacter(response.data)
+        console.log("API response:", response.data);
+        setLoading(false)
+        console.log(`deu certo`)
+      } catch (error) {
+        console.log(`o erro foi ${error}`)
+        setLoading(false)
+      }
+    }
+    fetchData();
+  }, [])
+
   return (
     <>
       <Header />
@@ -27,7 +47,7 @@ function ProductList() {
               <div className="topico-marka">
                 <h1>Marka</h1>
                 <div className="inputs-filtrar-por">
-                  <input className="input-filtrar-por check" type="checkbox" name="check-mark1"/>
+                  <input className="input-filtrar-por check" type="checkbox" name="check-mark1" />
                   <label className="label-filtrar-por" htmlFor="check-mark1">Adiddas</label>{/*props*/}
                 </div>
                 <div className="inputs-filtrar-por">
@@ -96,29 +116,28 @@ function ProductList() {
           </div>
           <div className="card-product-list">
             <div className="produto-em-alta-cards">
-              <Cards2 oferta="70" foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards2 oferta="40" foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-            </div>
-            <div className="produto-em-alta-cards">
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-            </div>
-            <div className="produto-em-alta-cards">
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-            </div>
-            <div className="produto-em-alta-cards">
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-            </div>
-            <div className="produto-em-alta-cards">
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-              <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
+              {Array.isArray(character) && character.slice(5, 20).map(card => (
+                card.desconto === true ? (
+                  <Cards2
+                    key={card.id}
+                    oferta={card.valordesconto}
+                    foto={sapatoAzul}
+                    titulo={card.titulo}
+                    descricao={card.descricao}
+                    valorantigo={card.valorantigo}
+                    valoratual={card.valoratual}
+                  />
+                ) : (
+                  <Cards
+                    key={card.id}
+                    foto={sapatoAzul}
+                    titulo={card.titulo}
+                    descricao={card.descricao}
+                    valorantigo={card.valorantigo}
+                    valoratual={card.valoratual}
+                  />
+                )
+              ))}
             </div>
           </div>
         </div>

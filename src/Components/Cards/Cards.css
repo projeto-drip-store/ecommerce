@@ -93,3 +93,41 @@
 .link-cards {
           text-decoration: none;
 }
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+          .cards-produtos {
+                    max-width: 18.25rem;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+          }
+
+          .fundo-card-img {
+                    background-color: var(--white);
+                    border-radius: 0.25rem;
+                    width: 18.25rem;
+                    height: 20.0625rem;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+          }
+
+          .fundo-card-img .icon-oferta .texto-ofertas {
+                    width: 6rem;
+                    height: 2rem;
+                    background-color: var(--verde_off);
+                    border-radius: 1.8125rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    z-index: 2;
+          }
+
+          .link-cards {
+                    text-decoration: none;
+          }
+
+}
