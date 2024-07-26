@@ -1,8 +1,9 @@
 .produto-em-alta-cards {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 4rem;
+  height: 100%;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .container-produtos-em-alta {
@@ -10,6 +11,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 .produtos-em-alta .topico-section {
@@ -65,3 +67,4 @@
 .produtos-em-alta .topico-section .link-ver-todos:hover {
   color: var(--tertiary);
 }
+

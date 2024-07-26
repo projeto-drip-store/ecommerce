@@ -45,16 +45,27 @@ function Home() {
             <h2><Link to="/ProductList" className="link-ver-todos">Ver todos <img src={flechaRosa} alt="flecha" /></Link></h2>
           </div>
           <div className="produto-em-alta-cards">
-            <Cards2 oferta="30" foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-            <Cards2 oferta="40" foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-            <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-            <Cards foto={sapatoAzul} titulo="Tênis" descricao="K-Swiss V8 - Masculino" valorantigo="200" valoratual="100" />
-          </div>
-        </div>
-        <div className="produtos-em-alta">
-          <div className="produto-em-alta-cards">
-            {Array.isArray(character) && character.map(card => (
-                <Cards key={card.id} foto={sapatoAzul} titulo={card.titulo} descricao={card.descricao} valorantigo={card.valorantigo} valoratual={card.valoratual} />
+            {Array.isArray(character) && character.slice(0, 10).map(card => (
+                card.desconto === true ? (
+                  <Cards2 
+                    key={card.id} 
+                    oferta={card.valordesconto} 
+                    foto={sapatoAzul} 
+                    titulo={card.titulo} 
+                    descricao={card.descricao} 
+                    valorantigo={card.valorantigo} 
+                    valoratual={card.valoratual} 
+                  />
+                ) : (
+                  <Cards 
+                    key={card.id} 
+                    foto={sapatoAzul} 
+                    titulo={card.titulo} 
+                    descricao={card.descricao} 
+                    valorantigo={card.valorantigo} 
+                    valoratual={card.valoratual} 
+                  />
+                )
               ))}
           </div>
         </div>
