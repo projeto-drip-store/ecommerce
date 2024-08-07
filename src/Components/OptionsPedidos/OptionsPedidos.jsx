@@ -8,13 +8,13 @@ function OptionsPedidos() {
     <>
       <div className="options-pedidos">
           <div className="options-pedidos-align">
-                    <Link to="">Meu Perfil</Link>
+                    <Link to="/asd">Meu Perfil</Link>
                     <hr/>
-                    <Link to="">Meus Pedidos</Link>
+                    <Link to="/Pedidos">Meus Pedidos</Link>
                     <hr/>
-                    <Link to="">Minhas Informações</Link>
+                    <Link to="/Informacoes">Minhas Informações</Link>
                     <hr/>
-                    <Link to="">Método de Pagamento</Link>
+                    <Link to="/asd">Método de Pagamento</Link>
           </div>
       </div>
     </>
