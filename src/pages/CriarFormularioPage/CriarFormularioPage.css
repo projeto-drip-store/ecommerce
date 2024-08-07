@@ -1,0 +1,126 @@
+.section-criar-forms{
+          width: 46.875rem;
+          height: 100%;
+          margin: 4rem auto;
+}
+
+.section-criar-forms  h4 {
+          max-width: 43.125rem;
+          color: var(--dark-gray-1);
+          font-family: var(--font_primaria);
+          font-weight: var(--font_weight_bold);
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+          letter-spacing: 0.75px;
+          margin: 1rem auto;
+}
+
+.section-criar-forms  hr {
+          max-width: 43.125rem;
+          margin: 1rem auto;
+}
+
+.infomacoes-pessoais{
+          max-width: 46.875rem;
+          height: 100%;
+          margin: 0 auto;
+          background-color: var(--white);
+          margin-bottom: 0.5rem;
+          border: 1px solid transparent;
+}
+
+.infomacoes-entrega{
+          max-width: 46.875rem;
+          height: 100%;
+          margin: 0 auto;
+          background-color: var(--white);
+          margin-bottom: 0.5rem;
+          border: 1px solid transparent;
+}
+
+.titulo-input-forms{
+          color: var(--black);
+          font-family: var(--font_primaria);
+          font-weight: var(--font_weight_bold);
+          font-size: 2rem;
+          line-height: 1.375rem;
+          letter-spacing: 1px;
+          margin-bottom: 1.5rem;
+}
+
+.criar-conta-forms {
+          display: flex;
+          flex-direction: column;
+}
+
+.input-ofertas-forms{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-bottom: 2rem;
+}
+
+.input-ofertas-forms .check-input-forms{
+          width: 2rem;
+          height: 4rem;
+          margin-right: 1rem;
+}
+
+.input-ofertas-forms label{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-self: flex-end;
+
+}
+
+
+
+.criar-conta-forms button {
+    width: 46.875rem;
+    height: 3rem;
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.criar-conta-forms button:hover {
+    background-color: var(--tertiary) !important;
+    color: var(--white) !important;
+}
+
+
+        
+
+
+/* --font_primaria: "Inter", sans-serif;
+  --font_weight_normal: 400;
+  --font_weight_bold: 700;
+  --font_weight_extra_bold: 900;
+
+  --primary: #c92071;
+  --secondary: #b5b6f2;
+  --tertiary: #991956;
+  --error: #ee4266;
+  --success: #52ca76;
+  --warning: #f6aa1c;
+  --verde_off: #e7ff86;
+
+  --dark-gray: #1f1f1f;
+  --dark-gray-2: #474747;
+  --dark-gray-3: #666666;
+  --light-gray: #8f8f8f;
+  --light-gray-2: #cccccc;
+  --light-gray-3: #f5f5f5;
+  --light-gray-4: #f8f8f8;
+  --white: #ffffff;
+  --black: #000000;
+  --fundo: #f9f8fe; */
