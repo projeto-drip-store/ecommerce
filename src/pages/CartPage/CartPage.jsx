@@ -34,13 +34,13 @@ function Cart() {
       <Header />
       <h1>Cart</h1>
       <section className="resumo-compra">
-        <MeuCarrinho />
+        
         <ResumoCompra />
       </section>
       <section className="container-produtos-em-alta section-cart">
         <div className="produtos-em-alta">
           <div className="topico-section">
-            <h1>Produtos em alta</h1>
+            <h1>Produtos em Relacionados</h1>
             <h2><Link to="/ProductList" className="link-ver-todos">Ver todos <img src={flechaRosa} alt="flecha" /></Link></h2>
           </div>
           <div className="produto-em-alta-cards section-cart-cards">
