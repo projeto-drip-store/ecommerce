@@ -1,0 +1,20 @@
+.resumo-cart-pedido{
+          width: 20.875rem;
+          height: 22.75rem;
+          border-radius: 0.5rem;
+          display: flex;
+          margin: 0 auto;
+          justify-content: flex-start;
+          background-color: var(--white)
+}
+
+.resumo-cart-pedido-info{
+          width: 17.125rem;
+          height: 19rem;
+          border: 1px red solid;
+          margin: auto auto;
+}
+
+.resumo-cart-pedido-info h3 {
+          
+}
