@@ -13,6 +13,11 @@ import axios from "axios"
 import sapatoAzul from "../../assets/img/sapato_card.png"
 
 function Cart() {
+  const [count, setCount] = useState(1);
+  const valorAtual = 219.00;
+  const frete = 20.00; // trocar por dinamico
+  const desconto = 10.00; // trocar por dinamico
+
   const [character, setCharacter] = useState([])
 
   useEffect(() => {
@@ -29,13 +34,26 @@ function Cart() {
     fetchData();
   }, [])
 
+  const multiploAtual = count * valorAtual;
+
   return (
     <>
       <Header />
-      <h1>Cart</h1>
       <section className="resumo-compra">
-        
-        <ResumoCompra />
+        <MeuCarrinho 
+          descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
+          cor={'Vermelho / Branco'}
+          tamanho={'42'}
+          valorAntigo={219.00}
+          valorAtual={valorAtual}
+          setCount={setCount}
+          multiploAtual={multiploAtual} 
+        />
+        <ResumoCompra 
+          frete={frete}
+          desconto={desconto}
+          multiploAtual={multiploAtual}
+        />
       </section>
       <section className="container-produtos-em-alta section-cart">
         <div className="produtos-em-alta">

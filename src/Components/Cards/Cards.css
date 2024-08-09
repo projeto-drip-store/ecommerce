@@ -1,9 +1,10 @@
 .cards-produtos {
-          max-width: 20.27vw;
-          height: 48.77vh;
+          max-width: 18.25rem;
+          height: auto;
           position: relative;
           z-index: 1;
           transition: 0.3s ease;
+
 }
 
 .cards-produtos:hover {
@@ -13,8 +14,8 @@
 .fundo-card-img {
           background-color: var(--white);
           border-radius: 0.25rem;
-          width: 20.27vw;
-          height: 35.66vh;
+          max-width: 18.25rem;
+          height: 20.06rem;
           display: flex;
           justify-content: center;
           align-items: center;
