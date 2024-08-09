@@ -3,10 +3,11 @@ import sapato from "../../assets/img/tenis-nike-view.svg";
 import { useState } from "react"
 
 // eslint-disable-next-line react/prop-types
-function MeuCarrinho({ descricao, cor, tamanho, valorAntigo, valorAtual, count, setCount, multiploAtual }) {
+function MeuCarrinho({ descricao, cor, tamanho, valorAntigo, valorAtual, count, setCount, multiploAtual, contar }) {
   
   const [contador, setContador] = useState(count);
   const multiploAntigo = count * valorAntigo;
+  // const multiploAtual = count * valorAtual;
 
   useState(() => {
     setContador(count);
@@ -33,7 +34,7 @@ function MeuCarrinho({ descricao, cor, tamanho, valorAntigo, valorAtual, count, 
         <div className="quantidade-pedidos">
           <div className="contador-pedidos">
             <button onClick={() => setCount(count => count - 1) && setContador(count => count - 1)}>-</button>
-            <h6>{contador}</h6>
+            <h6>{contar}</h6>
             <button onClick={() => setCount(count => count + 1) && setContador(count => count + 1)}>+</button>
           </div>
           <a href="#remover">Remover item</a>
@@ -44,7 +45,7 @@ function MeuCarrinho({ descricao, cor, tamanho, valorAntigo, valorAtual, count, 
         </div>
         <div className="total-pedidos">
           <h3>R${multiploAntigo.toFixed(2)}</h3> 
-          <h2>R${multiploAtual.toFixed(2)}</h2> 
+          <h2>R${multiploAtual.toFixed(2)}</h2>
         </div>
       </div>
       <hr />
