@@ -2,10 +2,7 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import OptionsPedidos from "../../Components/OptionsPedidos/OptionsPedidos";
 import MinhasInformacoes from "../../Components/MinhasInformacoes/MinhasInformacoes";
-
 import "./InformacoesPage.css";
-
-
 import { Link } from "react-router-dom";
 
 function Informacoes() {
@@ -21,7 +18,7 @@ function Informacoes() {
             <h4>Minhas Informações</h4>
             <Link to="/criarFormulario">editar</Link>
           </div>
-          <MinhasInformacoes 
+          <MinhasInformacoes
             nome={'Francisco Antonio Pereira'}
             cpf={'123485913-35'}
             email={'francisco@gmail.com'}

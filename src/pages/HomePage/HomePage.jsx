@@ -46,27 +46,27 @@ function Home() {
           </div>
           <div className="produto-em-alta-cards">
             {Array.isArray(character) && character.slice(0, 10).map(card => (
-                card.desconto === true ? (
-                  <Cards2 
-                    key={card.id} 
-                    oferta={card.valordesconto} 
-                    foto={sapatoAzul} 
-                    titulo={card.titulo} 
-                    descricao={card.descricao} 
-                    valorantigo={card.valorantigo} 
-                    valoratual={card.valoratual} 
-                  />
-                ) : (
-                  <Cards 
-                    key={card.id} 
-                    foto={sapatoAzul} 
-                    titulo={card.titulo} 
-                    descricao={card.descricao} 
-                    valorantigo={card.valorantigo} 
-                    valoratual={card.valoratual} 
-                  />
-                )
-              ))}
+              card.desconto === true ? (
+                <Cards2
+                  key={card.id}
+                  oferta={card.valordesconto}
+                  foto={sapatoAzul}
+                  titulo={card.titulo}
+                  descricao={card.descricao}
+                  valorantigo={card.valorantigo}
+                  valoratual={card.valoratual}
+                />
+              ) : (
+                <Cards
+                  key={card.id}
+                  foto={sapatoAzul}
+                  titulo={card.titulo}
+                  descricao={card.descricao}
+                  valorantigo={card.valorantigo}
+                  valoratual={card.valoratual}
+                />
+              )
+            ))}
           </div>
         </div>
       </section>

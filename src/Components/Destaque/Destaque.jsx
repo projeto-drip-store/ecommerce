@@ -9,7 +9,6 @@ export function Destaque() {
                 <div className="Imagem">
                     <img src={ImageSapato} alt="" />
                 </div>
-
                 <div className="element">
                     <span className="texto1">Oferta especial</span>
                     <h1 className="titulo">Air Jordan edição de colecionador</h1>
@@ -17,9 +16,6 @@ export function Destaque() {
                     <Link to="/ProductList">Ver Oferta</Link>
                 </div>
             </div>
-
         </section>
-
     )
 }
-

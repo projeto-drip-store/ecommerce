@@ -5,16 +5,16 @@ import Cards2 from "../../Components/Cards/Cards2"
 import ResumoCompra from "../../Components/ResumoCompra/ResumoCompra"
 import MeuCarrinho from "../../Components/MeuCarrinho/MeuCarrinho"
 import "./CartPage.css"
-import sapatoAzul from "../../assets/img/sapato_card.png"
 import flechaRosa from "../../assets/img/flecha_icon.svg"
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react"
 import axios from "axios"
 
+import sapatoAzul from "../../assets/img/sapato_card.png"
 
 function Cart() {
   const [count, setCount] = useState(1);
-  const valorAtual = 219.00; // trocar por dinamico
+  const valorAtual = 219.00;
   const frete = 20.00; // trocar por dinamico
   const desconto = 10.00; // trocar por dinamico
 
@@ -47,7 +47,6 @@ function Cart() {
           valorAntigo={219.00}
           valorAtual={valorAtual}
           setCount={setCount}
-          contar={count}
           multiploAtual={multiploAtual} 
         />
         <ResumoCompra 

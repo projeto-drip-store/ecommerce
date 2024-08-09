@@ -6,7 +6,6 @@ import tenisNike from "../../assets/img/tenis-nike-view.svg";
 function CarouselMenor() {
   return (
     <>
-
       <div id="carouselExampleDark" className="carousel carousel-product-view carousel-dark slide">
         <div className="carousel-indicators carousel-indicators-product-view">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active"

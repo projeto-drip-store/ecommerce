@@ -1,6 +1,4 @@
-// import { Link } from "react-router-dom";
 import "../MeusPedidos/MeusPedidos.css";
-
 
 // eslint-disable-next-line react/prop-types
 function MeusPedidos({ foto, alt, pedido, descricao, status }) {
@@ -10,7 +8,7 @@ function MeusPedidos({ foto, alt, pedido, descricao, status }) {
         <hr />
         <div className="detalhe-meus-pedidos">
           <div className="img-meus-pedidos">
-            <img src={foto} alt={alt}/>
+            <img src={foto} alt={alt} />
           </div>
           <div className="info-pedido">
             <h6>Pedido nº {pedido}</h6>

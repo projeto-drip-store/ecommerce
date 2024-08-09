@@ -15,5 +15,4 @@ function InputForms({ titulo, nome, type, descricao }) {
   );
 }
 
-
 export default InputForms

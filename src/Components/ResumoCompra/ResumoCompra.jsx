@@ -10,7 +10,7 @@ function ResumoCompra({ frete, desconto, multiploAtual }) {
       <div className="resumo-cart-pedido-info">
         <h3>RESUMO</h3>
         <hr />
-        <h4>Subtotal: <span>R$ {multiploAtual.toFixed(2)}</span></h4>
+        <h4>Subtotal: <span>R$ {Number(multiploAtual).toFixed(2)}</span></h4>
         <h4>Frete: <span>R$ {frete.toFixed(2)}</span></h4>
         <h4>Desconto: <span>R$ {desconto.toFixed(2)}</span></h4>
         <h2>Total: <span>R$ {total.toFixed(2)}</span></h2>
@@ -20,5 +20,4 @@ function ResumoCompra({ frete, desconto, multiploAtual }) {
     </div>
   );
 }
-
 export default ResumoCompra;

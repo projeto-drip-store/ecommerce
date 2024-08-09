@@ -4,10 +4,9 @@ import { useState } from "react"
 
 // eslint-disable-next-line react/prop-types
 function MeuCarrinho({ descricao, cor, tamanho, valorAntigo, valorAtual, count, setCount, multiploAtual, contar }) {
-  
+
   const [contador, setContador] = useState(count);
   const multiploAntigo = count * valorAntigo;
-  // const multiploAtual = count * valorAtual;
 
   useState(() => {
     setContador(count);
@@ -44,7 +43,7 @@ function MeuCarrinho({ descricao, cor, tamanho, valorAntigo, valorAtual, count, 
           <h2>R${valorAtual.toFixed(2)}</h2>
         </div>
         <div className="total-pedidos">
-          <h3>R${multiploAntigo.toFixed(2)}</h3> 
+          <h3>R${multiploAntigo.toFixed(2)}</h3>
           <h2>R${multiploAtual.toFixed(2)}</h2>
         </div>
       </div>

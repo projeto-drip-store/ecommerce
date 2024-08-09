@@ -5,7 +5,6 @@ import iconInstagram from '../../assets/img/iconInstagram.svg';
 import iconTwitter from '../../assets/img/iconTwitter.svg';
 import { Link } from "react-router-dom";
 
-
 function Footer() {
   return (
     <>

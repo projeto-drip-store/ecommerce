@@ -5,7 +5,6 @@ import OptionsPedidos from "../../Components/OptionsPedidos/OptionsPedidos";
 import MeusPedidos from "../../Components/MeusPedidos/MeusPedidos";
 import tenisNike from "../../assets/img/tenis-nike-view.svg";
 
-
 function Pedidos() {
   return (
     <>
@@ -19,41 +18,41 @@ function Pedidos() {
             <h4>Meus Pedidos</h4>
             <h5>STATUS</h5>
           </div>
-          <MeusPedidos 
-            foto={tenisNike} 
+          <MeusPedidos
+            foto={tenisNike}
             alt={'tenis'}
             pedido={'2234981932'}
             descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
             status={'Produto em trânsito'}
-          /> 
-          <MeusPedidos 
-            foto={tenisNike} 
+          />
+          <MeusPedidos
+            foto={tenisNike}
             alt={'tenis'}
             pedido={'2234981932'}
             descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
             status={'Finalizado'}
-          /> 
-          <MeusPedidos 
-            foto={tenisNike} 
+          />
+          <MeusPedidos
+            foto={tenisNike}
             alt={'tenis'}
             pedido={'2234981932'}
             descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
             status={'Cancelado'}
-          /> 
-          <MeusPedidos 
-            foto={tenisNike} 
+          />
+          <MeusPedidos
+            foto={tenisNike}
             alt={'tenis'}
             pedido={'2234981932'}
             descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
             status={'Finalizado'}
-          /> 
-          <MeusPedidos 
-            foto={tenisNike} 
+          />
+          <MeusPedidos
+            foto={tenisNike}
             alt={'tenis'}
             pedido={'2234981932'}
             descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
             status={'Finalizado'}
-          /> 
+          />
         </div>
       </section>
       <Footer />

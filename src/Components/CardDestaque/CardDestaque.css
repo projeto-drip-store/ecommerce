@@ -39,7 +39,7 @@
 .card-de-oferta-blusa h2 {
     font-size: 2rem;
     font-family: var(--font_primary);
-    font-weight: var(--font_weight_bold);  
+    font-weight: var(--font_weight_bold);
 }
 
 .card-de-oferta-blusa button {
@@ -66,9 +66,9 @@
     text-decoration: none;
     font-size: 1rem;
     font-family: var(--font_primary);
-    font-weight: var(--font_weight_bold);  
+    font-weight: var(--font_weight_bold);
     color: #C92071;
-    
+
 
 }
 
