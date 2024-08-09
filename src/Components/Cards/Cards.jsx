@@ -8,17 +8,17 @@ function Cards({ titulo, descricao, valorantigo, valoratual, foto }) {
     <>
       <Link className="link-cards" to="/ProductView">
         <div className="cards-produtos">
-            <div className="fundo-card-img">
-              <img src={foto} alt={titulo} />
+          <div className="fundo-card-img">
+            <img src={foto} alt={titulo} />
+          </div>
+          <div className="info-card">
+            <h2>{titulo}</h2>
+            <p>{descricao}</p>
+            <div className="preco-produto-card">
+              <h3 className="valor-antigo">$<span className="sublinhado-info">{valorantigo}</span></h3>
+              <h3 className="valor-atual">${valoratual}</h3>
             </div>
-            <div className="info-card">
-              <h2>{titulo}</h2>
-              <p>{descricao}</p>
-              <div className="preco-produto-card">
-                <h3 className="valor-antigo">$<span className="sublinhado-info">{valorantigo}</span></h3>
-                <h3 className="valor-atual">${valoratual}</h3>
-              </div>
-            </div>
+          </div>
         </div>
       </Link>
     </>
@@ -26,5 +26,3 @@ function Cards({ titulo, descricao, valorantigo, valoratual, foto }) {
 }
 
 export default Cards
-
-

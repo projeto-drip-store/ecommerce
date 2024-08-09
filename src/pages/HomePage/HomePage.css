@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
+
 }
 
 .produtos-em-alta .topico-section {
@@ -67,4 +67,3 @@
 .produtos-em-alta .topico-section .link-ver-todos:hover {
   color: var(--tertiary);
 }
-

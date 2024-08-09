@@ -8,7 +8,6 @@ import sapatoAzul from "../../assets/img/sapato_card.png";
 import { useState, useEffect } from "react"
 import axios from "axios"
 
-//esse é o projeto atual
 function ProductView() {
   const [character, setCharacter] = useState([])
 

@@ -63,15 +63,15 @@
 }
 
 .section-product-list .corpo-product-list .checkbox-filtrar-por {
-  width: 21.38vw;
-  height: 100vh;
+  width: 19.25rem;
+  height: auto;
   background-color: var(--white);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .section-product-list .corpo-product-list .checkbox-filtrar-por h1 {
@@ -83,12 +83,12 @@
 }
 
 .checkbox-filtrar-por-center {
-  width: 18vw;
-  height: 75vh;
+  width: 15.5rem;
+  height: 41.25rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .section-product-list .corpo-product-list .checkbox-filtrar-por .barra-filtrar-por {
@@ -261,9 +261,6 @@ input[type="radio"] {
   }
 
   .section-product-list .corpo-product-list .checkbox-filtrar-por {
-    width: 14rem;
-    height: 45rem;
-    background-color: var(--white);
     border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
@@ -271,7 +268,7 @@ input[type="radio"] {
     align-items: center;
     margin-right: 1rem;
   }
-  
+
 
   .section-product-list .corpo-product-list .checkbox-filtrar-por h1 {
     font-size: 1rem;

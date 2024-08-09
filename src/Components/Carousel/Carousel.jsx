@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 function Carousel() {
   return (
     <>
-
       <div id="carouselExampleDark" className="carousel carousel-dark slide">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active"
@@ -18,7 +17,7 @@ function Carousel() {
             aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
             aria-label="Slide 4"></button>
         </div>
         <div className="carousel-inner">

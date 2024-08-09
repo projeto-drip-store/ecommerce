@@ -1,4 +1,5 @@
-ol, ul {
+ol,
+ul {
     padding-left: 0;
 }
 
@@ -66,7 +67,7 @@ ol, ul {
 .rodape .informacao .informacao1 li a {
     color: var(--white);
     text-decoration: none;
-    
+
 }
 
 .rodape .informacao .informacao2 h4 {
@@ -259,7 +260,7 @@ footer {
         filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(0deg) saturate(0%) !important;
     }
 
-    .rodape .informacao .informacao1{
+    .rodape .informacao .informacao1 {
         align-self: left;
         text-align: left !important;
     }

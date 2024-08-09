@@ -52,7 +52,7 @@ function CardDestaque() {
                             <img className="blusa" src={fone} alt="blusa com estampa" />
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
         </>

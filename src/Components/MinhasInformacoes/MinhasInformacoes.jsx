@@ -1,8 +1,7 @@
-// import { Link } from "react-router-dom";
 import "../MinhasInformacoes/MinhasInformacoes.css"
 
 // eslint-disable-next-line react/prop-types
-function MinhasInformacoes({nome, cpf, email, celular, endereco, bairro, cidade, cep}) {
+function MinhasInformacoes({ nome, cpf, email, celular, endereco, bairro, cidade, cep }) {
 
   return (
     <>
@@ -27,6 +26,5 @@ function MinhasInformacoes({nome, cpf, email, celular, endereco, bairro, cidade,
     </>
   );
 }
-
 
 export default MinhasInformacoes

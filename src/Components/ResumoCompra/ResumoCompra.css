@@ -1,0 +1,106 @@
+.resumo-cart-pedido {
+    width: 20.875rem;
+    height: 22.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+    background-color: var(--white)
+}
+
+.resumo-cart-pedido-info {
+    width: 17.125rem;
+    height: 19rem;
+    margin: auto auto;
+}
+
+.resumo-cart-pedido-info h3 {
+    color: var(--black);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.75px;
+}
+
+.resumo-cart-pedido-info h4 {
+    color: var(--light-gray);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resumo-cart-pedido-info h2 {
+    color: var(--black);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resumo-cart-pedido-info h2 span {
+    color: var(--primary);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    font-size: 1.3rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.25px;
+}
+
+.resumo-cart-pedido-info span {
+    color: var(--black);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 1rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.25px;
+    align-self: center;
+}
+
+.resumo-cart-pedido-info h5 {
+    color: var(--light-gray);
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_normal);
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.resumo-cart-pedido-info button {
+    width: 17.125rem;
+    height: 2.5rem;
+    font-family: var(--font_primaria);
+    font-weight: var(--font_weight_bold);
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: var(--warning);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.resumo-cart-pedido-info button:hover {
+    background-color: #d19019 !important;
+    color: var(--white) !important;
+}

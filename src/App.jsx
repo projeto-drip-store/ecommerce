@@ -13,7 +13,6 @@ import Pedidos from "./pages/PedidosPage/PedidosPage";
 import Informacoes from "./pages/InformacoesPage/InformacoesPage";
 import Error from "./pages/Error404/Error404";
 
-
 function App() {
 
   return (
