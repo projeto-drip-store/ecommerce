@@ -1,5 +1,5 @@
 .topo {
-    background-color: #FFFFFF;
+    background-color: var(--white);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -26,7 +26,7 @@
 }
 
 .texto1 {
-    color: #C92071;
+    color: var(--primary);
     font-weight: 600;
     font-family: "Inter";
 }
@@ -39,18 +39,22 @@
 
 .element a {
     width: 200px;
-    background-color: #C92071;
-    color: #FFFFFF;
+    background-color: var(--primary);
+    color: var(--white);
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
+    transition: 0.3s ease;
+}
 
+.element a:hover{
+    background-color: var(--tertiary);
 }
 
 .titulo2 {
-    color: #474747;
+    color: var(--dark-gray-2);
     font-family: "Inter";
 
 }

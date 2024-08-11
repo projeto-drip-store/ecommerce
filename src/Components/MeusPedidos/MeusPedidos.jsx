@@ -5,7 +5,6 @@ function MeusPedidos({ foto, alt, pedido, descricao, status }) {
   return (
     <>
       <div className="meus-pedidos">
-        <hr />
         <div className="detalhe-meus-pedidos">
           <div className="img-meus-pedidos">
             <img src={foto} alt={alt} />

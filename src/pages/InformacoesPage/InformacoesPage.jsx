@@ -19,14 +19,26 @@ function Informacoes() {
             <Link to="/criarFormulario">editar</Link>
           </div>
           <MinhasInformacoes
-            nome={'Francisco Antonio Pereira'}
-            cpf={'123485913-35'}
-            email={'francisco@gmail.com'}
-            celular={'(85) 5555-5555'}
-            endereco={'Rua João Pessoa, 333'}
-            bairro={'Centro'}
-            cidade={'Fortaleza, Ceará'}
-            cep={'433-8800'}
+            topico={'Informações Pessoais'}
+            label1={'Nome:'}
+            label2={'CPF:'}
+            label3={'Email:'}
+            label4={'Celular:'}
+            result1={'Francisco Antonio Pereira'}
+            result2={'123485913-35'}
+            result3={'francisco@gmail.com'}
+            result4={'(85) 5555-5555'}
+          />
+          <MinhasInformacoes
+            topico={'Informações de Entrega'}
+            label1={'Endereço:'}
+            label2={'Bairro:'}
+            label3={'Cidade:'}
+            label4={'CEP:'}
+            result1={'Rua João Pessoa, 333'}
+            result2={'Centro'}
+            result3={'Fortaleza, Ceará'}
+            result4={'433-8800'}
           />
         </div>
       </section>

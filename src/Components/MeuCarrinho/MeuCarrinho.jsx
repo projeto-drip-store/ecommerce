@@ -1,16 +1,10 @@
 import "../MeuCarrinho/MeuCarrinho.css";
 import sapato from "../../assets/img/tenis-nike-view.svg";
-import { useState } from "react"
 
 // eslint-disable-next-line react/prop-types
-function MeuCarrinho({ descricao, cor, tamanho, valorAntigo, valorAtual, count, setCount, multiploAtual, contar }) {
+function MeuCarrinho({ descricao, cor, tamanho, valorAntigo, valorAtual, count, setCount, multiploAtual }) {
 
-  const [contador, setContador] = useState(count);
   const multiploAntigo = count * valorAntigo;
-
-  useState(() => {
-    setContador(count);
-  }, [count]);
 
   return (
     <div className="carrinho-pedidos">
@@ -32,19 +26,19 @@ function MeuCarrinho({ descricao, cor, tamanho, valorAntigo, valorAtual, count, 
         </div>
         <div className="quantidade-pedidos">
           <div className="contador-pedidos">
-            <button onClick={() => setCount(count => count - 1) && setContador(count => count - 1)}>-</button>
-            <h6>{contar}</h6>
-            <button onClick={() => setCount(count => count + 1) && setContador(count => count + 1)}>+</button>
+            <button onClick={() => setCount(count > 1 ? count - 1 : 1)}>-</button>
+            <h6>{count}</h6>
+            <button onClick={() => setCount(count + 1)}>+</button>
           </div>
           <a href="#remover">Remover item</a>
         </div>
         <div className="unitario-pedidos">
-          <h3>R${valorAntigo.toFixed(2)}</h3>
-          <h2>R${valorAtual.toFixed(2)}</h2>
+          <h3>R${Number(valorAntigo).toFixed(2)}</h3>
+          <h2>R${Number(valorAtual).toFixed(2)}</h2>
         </div>
         <div className="total-pedidos">
-          <h3>R${multiploAntigo.toFixed(2)}</h3>
-          <h2>R${multiploAtual.toFixed(2)}</h2>
+          <h3>R${Number(multiploAntigo).toFixed(2)}</h3>
+          <h2>R${Number(multiploAtual).toFixed(2)}</h2>
         </div>
       </div>
       <hr />

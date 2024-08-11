@@ -69,23 +69,16 @@
 .buyBox {
   margin-left: 3rem;
   margin-right: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.botaoCompraProductView {
-  width: 220px;
-  height: 48px;
-  top: 799px;
-  left: 841px;
-  gap: 0px;
-  opacity: 0px;
-  background-color: var(--warning);
-  color: var(--white);
-  font-family: var(--font_primaria);
-  font-weight: var(--font_weight_bold);
-  font-size: 1rem;
-  border-radius: 0.5rem;
-  outline: none;
-  border: none;
+.botaoCompraProductView a{
+  width: 220px !important;
+  height: 48px !important;
+  font-weight: var(--font_weight_bold) !important;
 }
 
 .galery {

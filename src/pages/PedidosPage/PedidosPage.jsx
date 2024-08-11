@@ -18,6 +18,7 @@ function Pedidos() {
             <h4>Meus Pedidos</h4>
             <h5>STATUS</h5>
           </div>
+          <hr />
           <MeusPedidos
             foto={tenisNike}
             alt={'tenis'}
@@ -25,6 +26,7 @@ function Pedidos() {
             descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
             status={'Produto em trânsito'}
           />
+          <hr />
           <MeusPedidos
             foto={tenisNike}
             alt={'tenis'}
@@ -32,6 +34,7 @@ function Pedidos() {
             descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
             status={'Finalizado'}
           />
+          <hr />
           <MeusPedidos
             foto={tenisNike}
             alt={'tenis'}
@@ -39,6 +42,7 @@ function Pedidos() {
             descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
             status={'Cancelado'}
           />
+          <hr />
           <MeusPedidos
             foto={tenisNike}
             alt={'tenis'}
@@ -46,6 +50,7 @@ function Pedidos() {
             descricao={'Tênis Nike Revolution 6 Next Nature Masculino'}
             status={'Finalizado'}
           />
+          <hr />
           <MeusPedidos
             foto={tenisNike}
             alt={'tenis'}

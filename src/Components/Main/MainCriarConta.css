@@ -65,7 +65,7 @@
     margin-bottom: 1rem;
 }
 
-.formulario .conta button {
+.formulario .conta .btn-login a{
     width: 32.68rem;
     height: 3rem;
     font-family: var(--font_primaria);
@@ -80,9 +80,8 @@
     transition: 0.5s ease;
 }
 
-.formulario .conta button:hover {
-    background-color: var(--primary);
-    color: var(--black);
+.formulario .conta .btn-login a:hover {
+    background-color: var(--tertiary);
 }
 
 .formulario .conta a {
@@ -216,9 +215,9 @@
         align-self: center;
     }
 
-    .formulario .conta button {
+    .formulario .conta .btn-login {
         width: 100%;
-        height: 7vh;
+        height: 10vh;
         align-self: center;
     }
 

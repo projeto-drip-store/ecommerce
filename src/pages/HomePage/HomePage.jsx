@@ -22,11 +22,9 @@ function Home() {
         const response = await axios.get("https://669111dd26c2a69f6e8e4d94.mockapi.io/products/products")
         setCharacter(response.data)
         console.log("API response:", response.data);
-        setLoading(false)
         console.log(`deu certo`)
       } catch (error) {
         console.log(`o erro foi ${error}`)
-        setLoading(false)
       }
     }
     fetchData();

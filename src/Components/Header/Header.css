@@ -69,30 +69,16 @@ nav a img {
     color: var(--primary);
 }
 
-.nav-header button {
-    width: 7.125rem;
-    height: 2.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--primary);
-    color: var(--white);
-    font-family: var(--font_primaria);
-    font-weight: var(--font_weight_normal);
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.5s ease;
+.btn-header-login a {
+    width: 7.125rem !important;
+    height: 2.5rem !important;
+    background-color: var(--primary) !important;
+    transition: 0.5s ease !important;
 }
 
-.nav-header button:hover {
+.btn-header-login a:hover {
     background-color: var(--tertiary) !important;
-    color: var(--white) !important;
 }
-
-.nav-header button a {
-    text-decoration: none;
-}
-
 
 .nav-header .icon-carrinho {
     width: 2.06rem;

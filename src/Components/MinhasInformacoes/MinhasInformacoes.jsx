@@ -1,26 +1,18 @@
 import "../MinhasInformacoes/MinhasInformacoes.css"
 
 // eslint-disable-next-line react/prop-types
-function MinhasInformacoes({ nome, cpf, email, celular, endereco, bairro, cidade, cep }) {
+function MinhasInformacoes({ topico, label1, label2, label3, label4, result1, result2, result3, result4}) {
 
   return (
     <>
       <div className="minhas-informacoes">
         <hr />
         <div className="detalhe-minhas-informacoes">
-          <h2>Informacoes Pessoais</h2>
-          <h3>Nome: <span>{nome}</span></h3>
-          <h3>CPF: <span>{cpf}</span></h3>
-          <h3>Email: <span>{email}</span></h3>
-          <h3>Celular: <span>{celular}</span></h3>
-        </div>
-        <hr />
-        <div className="detalhe-minhas-informacoes">
-          <h2>Informacoes de Entrega</h2>
-          <h3>Endereço: <span>{endereco}</span></h3>
-          <h3>Bairro: <span>{bairro}</span></h3>
-          <h3>CIDADE: <span>{cidade}</span></h3>
-          <h3>CEP: <span>{cep}</span></h3>
+          <h2>{topico}</h2>
+          <h3>{label1} <span>{result1}</span></h3>
+          <h3>{label2} <span>{result2}</span></h3>
+          <h3>{label3} <span>{result3}</span></h3>
+          <h3>{label4} <span>{result4}</span></h3>
         </div>
       </div>
     </>
