@@ -21,7 +21,9 @@ function Criar() {
           <div className="conta">
             <h4>Email *</h4>
             <input type="email" placeholder="Insira seu email" />
-            <button type="button">Criar Conta</button>
+            <div className="button-link-home btn-login">
+              <Link to="/CriarFormulario">Criar Conta</Link>
+            </div>
           </div>
           <div className="outrologin">
             <p>Ou faça login com</p>

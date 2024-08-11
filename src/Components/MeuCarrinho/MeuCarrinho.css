@@ -5,6 +5,7 @@
     border-radius: 0.5rem;
     padding: 0 2rem 0 2rem;
     border: 1px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .topico-pedidos {

@@ -14,6 +14,7 @@
     justify-content: space-between;
     padding-left: 1rem;
     border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-de-oferta-blusa .oferta {
@@ -28,6 +29,7 @@
     font-family: var(--font_primary);
     font-weight: var(--font_weight_bold);
     text-align: center;
+    
 }
 
 .card-de-oferta-blusa .oferta h3 {
@@ -40,36 +42,6 @@
     font-size: 2rem;
     font-family: var(--font_primary);
     font-weight: var(--font_weight_bold);
-}
-
-.card-de-oferta-blusa button {
-    width: 9.56rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    background-color: #F5F5F5;
-    border: none;
-    transition: 0.3s ease;
-}
-
-.card-de-oferta-blusa button:hover {
-    background-color: var(--primary);
-}
-
-.card-de-oferta-blusa .button:hover {
-    color: var(--white);
-}
-
-
-.card-de-oferta-blusa .button {
-    width: 10rem;
-    height: 3rem;
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: var(--font_primary);
-    font-weight: var(--font_weight_bold);
-    color: #C92071;
-
-
 }
 
 .informacao {
@@ -95,4 +67,22 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 4rem;
+    
+}
+
+.btn-destaque a{
+    width: 10rem !important;
+    height: 3rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray-3) !important;
+    color: var(--primary) !important;
+    margin: auto !important;
+    transition: 0.3s ease;
+}
+
+.btn-destaque a:hover{
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
 }

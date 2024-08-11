@@ -1,13 +1,13 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import InputForms from "../../Components/InputForms/InputForms";
-import ResumoCompra from "../../Components/ResumoCompra/ResumoCompra"
-import { CompraSucesso } from "../../Components/CompraSucesso/CompraSucesso"
-import "./ConfirmarCompraPage.css"
+import ResumoCompra2 from "../../Components/ResumoCompra/ResumoCompra2";
+import "./ConfirmarCompraPage.css";
+import { Link } from "react-router-dom";
 
-function ConfirmarCompra({ multiploAtual }) {
-  const frete = 20.00; // trocar por dinamico
-  const desconto = 10.00; // trocar por dinamico
+function ConfirmarCompra() {
+  const frete = 20.0; // trocar por dinamico
+  const desconto = 10.0; // trocar por dinamico
   return (
     <>
       <Header />
@@ -19,97 +19,175 @@ function ConfirmarCompra({ multiploAtual }) {
               <h4>Infomacoes Pessoais</h4>
               <hr />
               <InputForms
-                titulo={'nome'}
-                nome={'Nome completo*'}
-                type={'text'}
-                descricao={'Insira seu nome'}
+                titulo={"nome"}
+                nome={"Nome completo*"}
+                type={"text"}
+                descricao={"Insira seu nome"}
+                required
               />
               <InputForms
-                titulo={'cpf'}
-                nome={'CPF*'}
-                type={'text'}
-                descricao={'Insira seu CPF'}
+                titulo={"cpf"}
+                nome={"CPF*"}
+                type={"text"}
+                descricao={"Insira seu CPF"}
+                required
               />
               <InputForms
-                titulo={'email'}
-                nome={'E-mail*'}
-                type={'email'}
-                descricao={'Insira seu email'}
+                titulo={"emails"}
+                nome={"E-mail*"}
+                type={"email"}
+                descricao={"Insira seu email"}
+                required
               />
               <InputForms
-                titulo={'celular'}
-                nome={'Celular*'}
-                type={'text'}
-                descricao={'Insira seu celular'}
+                titulo={"celular"}
+                nome={"Celular*"}
+                type={"text"}
+                descricao={"Insira seu celular"}
+                required
               />
             </div>
             <div className="infomacoes-entrega">
               <h4>Infomacoes de Entrega</h4>
               <hr />
               <InputForms
-                titulo={'endereco'}
-                nome={'Endereco*'}
-                type={'text'}
-                descricao={'Insira seu endereco'}
+                titulo={"endereco"}
+                nome={"Endereco*"}
+                type={"text"}
+                descricao={"Insira seu endereco"}
+                required
               />
               <InputForms
-                titulo={'bairro'}
-                nome={'Bairro*'}
-                type={'text'}
-                descricao={'Insira seu bairro'}
+                titulo={"bairro"}
+                nome={"Bairro*"}
+                type={"text"}
+                descricao={"Insira seu bairro"}
+                required
               />
               <InputForms
-                titulo={'cidade'}
-                nome={'Cidade*'}
-                type={'text'}
-                descricao={'Insira seu cidade'}
+                titulo={"cidade"}
+                nome={"Cidade*"}
+                type={"text"}
+                descricao={"Insira seu cidade"}
+                required
               />
               <InputForms
-                titulo={'cep'}
-                nome={'CEP*'}
-                type={'text'}
-                descricao={'Insira seu CEP'}
+                titulo={"cep"}
+                nome={"CEP*"}
+                type={"text"}
+                descricao={"Insira seu CEP"}
+                required
               />
               <InputForms
-                titulo={'complemento'}
-                nome={'Complemento'}
-                type={'text'}
-                descricao={'Insira seu complemento'}
+                titulo={"complemento"}
+                nome={"Complemento"}
+                type={"text"}
+                descricao={"Insira seu complemento"}
+                required
               />
             </div>
-            <div className="criar-conta-forms button-confirmar-compra">
-              <button type="button">Realizar Pagamento</button>
+            <div className="infomacoes-entrega infomacoes-pagamento">
+              <h4>Infomacoes de Pagamento</h4>
+              <hr />
+              <div className="form-radio">
+              <h6>Forma de pagamento</h6>
+                <div className="topico-estado align-direction">
+                  <div className="inputs-filtrar-por">
+                    <input
+                      id="check-mark3"
+                      className="input-filtrar-por radio"
+                      type="radio"
+                      name="check-mark3"
+                      checked
+                    />
+                    <label className="label-filtrar-por" htmlFor="check-mark3">
+                      Cartão de Crédito
+                    </label>
+                  </div>
+                  <div className="inputs-filtrar-por">
+                    <input
+                      id="check-mark4"
+                      className="input-filtrar-por radio"
+                      type="radio"
+                      name="check-mark4"
+                    />
+                    <label className="label-filtrar-por" htmlFor="check-mark4">
+                      Boleto Bancário
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <InputForms
+                className="nome-cartao"
+                titulo={"nomeCartao"}
+                nome={"Nome do Cartão*"}
+                type={"text"}
+                descricao={"Insira o nome do Cartão"}
+                required
+              />
+              <div className="info-cartao-container">
+                <div className="info-cartao-group">
+                  <InputForms
+                    className="numero-cartao"
+                    titulo={"numeroCartao"}
+                    nome={"Número do Cartão*"}
+                    type={"text"}
+                    descricao={"Insira o número do Cartão"}
+                    maxlength="19"
+                    pattern="\d{4} \d{4} \d{4} \d{4}"
+                    required
+                  />
+                </div>
+                <div className="info-cartao-group">
+                  <InputForms
+                    className="data-cartao"
+                    titulo={"validade"}
+                    nome={"Data de validade do Cartão*"}
+                    type={"month"}
+                    descricao={"Insira a validade do Cartão"}
+                    required
+                  />
+                </div>
+                <div className="info-cartao-group">
+                  <InputForms
+                    className="cvv-cartao"
+                    titulo={"cvv"}
+                    nome={"CVV*"}
+                    type={"text"}
+                    descricao={"Insira seu complemento"}
+                    maxlength="3"
+                    required
+                  />
+                </div>
+                <div className="info-cartao-group"></div>
+              </div>
+            </div>
+            <div className="infomacoes-entrega cart-suceso">
+              <h6>Finalizar Compra</h6>
+              <hr />
+              <div className="resumo-valor resumo-valor2">
+                <h2>
+                  Total: <span>R$ {Number({ frete }).toFixed(2)}</span>
+                </h2>
+                <h5>
+                  ou 10x de R$ {Number({ desconto }).toFixed(2)} sem juros
+                </h5>
+              </div>
+              <div className="btn-resumo2 btn-resumo-maior ">
+                <Link to="/Sucesso">Realizar Pagamento</Link>
+              </div>
             </div>
           </div>
           <div className="align-resumo-compra">
-            <ResumoCompra
+            <ResumoCompra2
               frete={frete}
               desconto={desconto}
-              multiploAtual={multiploAtual}
+              multiploAtual={0}
             />
           </div>
         </div>
       </section>
-      {/* function ResumoCompra({ frete, desconto, multiploAtual }) {
-  const total = multiploAtual + frete - desconto;
-  const parcela = total / 10;
 
-  return (
-    <div className="resumo-cart-pedido">
-      <div className="resumo-cart-pedido-info">
-        <h3>RESUMO</h3>
-        <hr />
-        <h4>Subtotal: <span>R$ {Number(multiploAtual).toFixed(2)}</span></h4>
-        <h4>Frete: <span>R$ {frete.toFixed(2)}</span></h4>
-        <h4>Desconto: <span>R$ {desconto.toFixed(2)}</span></h4>
-        <h2>Total: <span>R$ {total.toFixed(2)}</span></h2>
-        <h5>ou 10x de R$ {parcela.toFixed(2)} sem juros</h5>
-        <button>Continuar</button>
-      </div>
-    </div>
-  );
-} */}
-      <CompraSucesso />
       <Footer />
     </>
   );

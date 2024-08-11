@@ -91,9 +91,9 @@
     letter-spacing: 0.75px;
 }
 
-.carousel .carousel-inner .hero .texto-ofertas .oferta {
-    background-color: var(--primary);
-    color: var(--white);
+.carousel .carousel-inner .hero .texto-ofertas .btn-carousel-home a{
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
     border-radius: 0.5rem;
     width: 13.75rem;
     height: 3rem;
@@ -107,15 +107,9 @@
     transition: 0.5s ease !important;
 }
 
-.carousel .carousel-inner .hero .texto-ofertas .oferta:hover {
+.carousel .carousel-inner .hero .texto-ofertas .btn-carousel-home a:hover {
     background-color: var(--tertiary) !important;
     color: var(--white) !important;
-}
-
-.carousel .carousel-inner .hero .texto-ofertas .oferta a {
-    text-decoration: none;
-    color: var(--white);
-
 }
 
 .carousel .carousel-inner .imagem-ilustrativa {

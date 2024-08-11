@@ -15,24 +15,24 @@ import sapatoAzul from "../../assets/img/sapato_card.png"
 function Cart() {
   const [count, setCount] = useState(1);
   const valorAtual = 219.00;
-  const frete = 20.00; // trocar por dinamico
-  const desconto = 10.00; // trocar por dinamico
+  const frete = 20.00; 
+  const desconto = 10.00; 
 
-  const [character, setCharacter] = useState([])
+  const [character, setCharacter] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://669111dd26c2a69f6e8e4d94.mockapi.io/products/products")
-        setCharacter(response.data)
+        const response = await axios.get("https://669111dd26c2a69f6e8e4d94.mockapi.io/products/products");
+        setCharacter(response.data);
         console.log("API response:", response.data);
-        console.log(`deu certo`)
+        console.log(`deu certo`);
       } catch (error) {
-        console.log(`o erro foi ${error}`)
+        console.log(`o erro foi ${error}`);
       }
-    }
+    };
     fetchData();
-  }, [])
+  }, []);
 
   const multiploAtual = count * valorAtual;
 
@@ -47,6 +47,7 @@ function Cart() {
           valorAntigo={219.00}
           valorAtual={valorAtual}
           setCount={setCount}
+          count={count}
           multiploAtual={multiploAtual} 
         />
         <ResumoCompra 
@@ -58,7 +59,7 @@ function Cart() {
       <section className="container-produtos-em-alta section-cart">
         <div className="produtos-em-alta">
           <div className="topico-section">
-            <h1>Produtos em Relacionados</h1>
+            <h1>Produtos Relacionados</h1>
             <h2><Link to="/ProductList" className="link-ver-todos">Ver todos <img src={flechaRosa} alt="flecha" /></Link></h2>
           </div>
           <div className="produto-em-alta-cards section-cart-cards">

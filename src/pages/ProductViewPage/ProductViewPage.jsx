@@ -5,27 +5,28 @@ import Cards2 from "../../Components/Cards/Cards2";
 import Cards from "../../Components/Cards/Cards";
 import Carrousel from "../../Components/CarouselMenor/CarouselMenor";
 import sapatoAzul from "../../assets/img/sapato_card.png";
-import { useState, useEffect } from "react"
-import axios from "axios"
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 function ProductView() {
-  const [character, setCharacter] = useState([])
+  const [character, setCharacter] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://669111dd26c2a69f6e8e4d94.mockapi.io/products/products")
-        setCharacter(response.data)
+        const response = await axios.get(
+          "https://669111dd26c2a69f6e8e4d94.mockapi.io/products/products"
+        );
+        setCharacter(response.data);
         console.log("API response:", response.data);
-        setLoading(false)
-        console.log(`deu certo`)
+        console.log(`deu certo`);
       } catch (error) {
-        console.log(`o erro foi ${error}`)
-        setLoading(false)
+        console.log(`o erro foi ${error}`);
       }
-    }
+    };
     fetchData();
-  }, [])
+  }, []);
 
   return (
     <>
@@ -99,7 +100,9 @@ function ProductView() {
                 </div>
               </div>
             </div>
-            <button className="botaoCompraProductView">Comprar</button>
+            <div className="button-link-home botaoCompraProductView">
+              <Link to="/Cart">Comprar</Link>
+            </div>
           </div>
         </div>
       </div>
@@ -107,28 +110,31 @@ function ProductView() {
       <section className="produtos_relacionados">
         <h5>Produtos relacionados</h5>
         <div className="produto-em-alta-cards">
-          {Array.isArray(character) && character.slice(0, 4).map(card => (
-            card.desconto === true ? (
-              <Cards2
-                key={card.id}
-                oferta={card.valordesconto}
-                foto={sapatoAzul}
-                titulo={card.titulo}
-                descricao={card.descricao}
-                valorantigo={card.valorantigo}
-                valoratual={card.valoratual}
-              />
-            ) : (
-              <Cards
-                key={card.id}
-                foto={sapatoAzul}
-                titulo={card.titulo}
-                descricao={card.descricao}
-                valorantigo={card.valorantigo}
-                valoratual={card.valoratual}
-              />
-            )
-          ))}
+          {Array.isArray(character) &&
+            character
+              .slice(0, 4)
+              .map((card) =>
+                card.desconto === true ? (
+                  <Cards2
+                    key={card.id}
+                    oferta={card.valordesconto}
+                    foto={sapatoAzul}
+                    titulo={card.titulo}
+                    descricao={card.descricao}
+                    valorantigo={card.valorantigo}
+                    valoratual={card.valoratual}
+                  />
+                ) : (
+                  <Cards
+                    key={card.id}
+                    foto={sapatoAzul}
+                    titulo={card.titulo}
+                    descricao={card.descricao}
+                    valorantigo={card.valorantigo}
+                    valoratual={card.valoratual}
+                  />
+                )
+              )}
         </div>
       </section>
 

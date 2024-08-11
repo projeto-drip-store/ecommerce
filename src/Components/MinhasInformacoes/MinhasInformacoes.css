@@ -1,6 +1,6 @@
 .minhas-informacoes {
     max-width: 51.875rem;
-    height: 29.125rem;
+    height: auto;
 }
 
 .minhas-informacoes hr {
@@ -13,7 +13,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
 }
 
 .detalhe-minhas-informacoes h2 {
