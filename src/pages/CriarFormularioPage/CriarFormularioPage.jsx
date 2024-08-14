@@ -19,6 +19,24 @@ function CriarFormulario() {
             descricao={'Insira seu nome'}
           />
           <InputForms
+            titulo={'user'}
+            nome={'Usuário*'}
+            type={'text'}
+            descricao={'Insira seu usuário'}
+          />
+          <InputForms
+            titulo={'senha'}
+            nome={'Senha*'}
+            type={'password'}
+            descricao={'Insira sua senha'}
+          />
+          <InputForms
+            titulo={'senha2'}
+            nome={'Repita a Senha*'}
+            type={'password'}
+            descricao={'Insira sua senha novamente'}
+          />
+          <InputForms
             titulo={'cpf'}
             nome={'CPF*'}
             type={'text'}
