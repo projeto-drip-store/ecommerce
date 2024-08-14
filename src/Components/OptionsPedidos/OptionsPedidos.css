@@ -12,9 +12,8 @@
 .options-pedidos-align {
     width: 17.125rem;
     height: 13rem;
-    margin: auto auto;
+    margin: auto;
 }
-
 .options-pedidos-align a {
     color: var(--black);
     font-family: var(--font_primaria);
@@ -23,9 +22,16 @@
     line-height: 1.75rem;
     letter-spacing: 0.75px;
     text-decoration: none;
-    transform: 0.5s ease;
+    transition: color 0.5s ease;
 }
 
 .options-pedidos-align a:hover {
     color: var(--primary);
+}
+
+.options-pedidos .selected {
+    font-weight: var(--font_weight_bold);
+    color: var(--primary);
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
 }

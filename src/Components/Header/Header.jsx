@@ -1,9 +1,12 @@
 import "../Header/Header.css";
 import logo from "../../assets/img/logo.svg";
 import carrinho from "../../assets/img/carrinho.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
+  const location = useLocation();
+  const path = location.pathname;
+
   return (
     <>
       <header>
@@ -30,22 +33,50 @@ function Header() {
             </div>
             <div className="nav-footer">
               <li>
-                <Link to="/" className="nav-footer-home">
+                <Link
+                  to="/"
+                  className={
+                    path === "/"
+                      ? "nav-footer-home selected"
+                      : "nav-footer-home"
+                  }
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/ProductList" className="nav-footer-produtos">
+                <Link
+                  to="/ProductList"
+                  className={
+                    path === "/ProductList"
+                      ? "nav-footer-produtos selected"
+                      : "nav-footer-produtos"
+                  }
+                >
                   Produtos
                 </Link>
               </li>
               <li>
-                <Link to="/Error" className="nav-footer-categorias">
+                <Link
+                  to="/Error"
+                  className={
+                    path === "/Error"
+                      ? "nav-footer-categorias selected"
+                      : "nav-footer-categorias"
+                  }
+                >
                   Categorias
                 </Link>
               </li>
               <li>
-                <Link to="/Pedidos" className="nav-footer-pedidos">
+                <Link
+                  to="/Pedidos"
+                  className={
+                    path === "/Pedidos"
+                      ? "nav-footer-pedidos selected"
+                      : "nav-footer-pedidos"
+                  }
+                >
                   Meus Pedidos
                 </Link>
               </li>
