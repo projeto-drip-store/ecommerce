@@ -15,6 +15,7 @@ export const runServer = async () => {
   app.use('/api', router);
   
   
+  
   app.listen(port, () => {
     try{
       console.log(chalk.green.bold(`\nO servidor está rodando em: http://localhost:${port}\n`));
