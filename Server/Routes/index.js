@@ -18,4 +18,3 @@ router.post('/user/login', loginUser);
 router.get('/address', getAllAddress);
 router.post('/address/register', registerAddress);
 
-// http://localhost:3000/api/

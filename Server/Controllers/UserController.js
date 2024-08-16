@@ -17,9 +17,9 @@ export const getAllUsers = async (req, res) => {
 export const registerUser = async (req, res) => {
   try {
 
-    const { nome, email, senha, usuario, cpf } = req.body;
+    const { nome, email, senha, cpf } = req.body;
     const hashedPassword = doHash(senha);
-    const users = await User.create({nome, email, senha: hashedPassword, usuario, cpf});
+    const users = await User.create({nome, email, senha: hashedPassword, cpf});
     res.status(201).json(users);
   } catch (error) {
     res.status(500).json({ error: error.message });
