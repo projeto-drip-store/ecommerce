@@ -1,9 +1,12 @@
 import express from "express";
-import { router } from "../Routes/index.js";
 import dotenv from "dotenv";
+import chalk from "chalk";
+import { router } from "../Routes/index.js";
 
 export const runServer = async () => {
   const app = express();
+
+  app.use(express.urlencoded({ extended: true }))
   app.use(express.json());
   dotenv.config();
   
@@ -14,7 +17,7 @@ export const runServer = async () => {
   
   app.listen(port, () => {
     try{
-      console.log(`O servidor está rodando em: http://localhost:${port}`);
+      console.log(chalk.green.bold(`\nO servidor está rodando em: http://localhost:${port}\n`));
   
     } catch (error) {
       console.error(error);
