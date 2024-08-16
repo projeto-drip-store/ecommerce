@@ -28,17 +28,11 @@ function CriarFormulario() {
       alert('Por favor, preencha todos os campos.');
       return
     }
-
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries())
 
     console.log(data);
-
-
     navigate("/Login", { replace: true })
-
-
-
   }
 
   return (

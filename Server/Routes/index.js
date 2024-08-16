@@ -11,3 +11,4 @@ router.get('/users', getAllUsers);
 
 router.post('/register', registerUser);
 router.post('/login', loginUser);
+
