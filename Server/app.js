@@ -5,9 +5,8 @@ import { runServer } from "./Script/runServer.js";
 const main = async () => {
   try {
     
-  await runServer();
-  await createTables();
-    
+    await createTables();
+    await runServer();
   }
   catch (error) { 
     console.error(error);

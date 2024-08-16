@@ -14,21 +14,21 @@ export const User = DBconfig.define("usuario", {
       isEmail: true, 
     }
   },
-  password: {
-    type: Sequelize.STRING, 
+  senha: {
+    type: Sequelize.STRING(500), 
     allowNull: false, 
   },
-  user: {
+  usuario: {
     type: Sequelize.STRING(30), 
     allowNull: false, 
     unique: true, 
   },
   cpf: {
-    type: Sequelize.STRING(11), 
+    type: Sequelize.STRING(14), 
     allowNull: false, 
     unique: true,
     validate: {
-      len: [11, 11], 
+      is: /^[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}$/i, 
     }
   }
 });
