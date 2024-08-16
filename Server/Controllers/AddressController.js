@@ -1,7 +1,6 @@
 import { Address } from "../Models/Address.js"
 
-// GET
-
+// GET 
 export const getAllAddress = async (req, res) => {
     try {
         const address = await Address.findAll();
