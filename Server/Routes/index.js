@@ -9,6 +9,6 @@ export const router = express.Router();
 
 router.get('/users', getAllUsers);
 
-router.post('/register', registerUser);
-router.post('/login', loginUser);
+router.post('/user/register', registerUser);
+router.post('/user/login', loginUser);
 

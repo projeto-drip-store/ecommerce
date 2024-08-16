@@ -1,11 +1,13 @@
 import express from "express";
 import dotenv from "dotenv";
 import chalk from "chalk";
+import cors from "cors"
 import { router } from "../Routes/index.js";
 
 export const runServer = async () => {
   const app = express();
 
+  app.use(cors());
   app.use(express.urlencoded({ extended: true }))
   app.use(express.json());
   dotenv.config();
