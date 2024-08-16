@@ -8,6 +8,15 @@ Json teste usuario
   "cpf": ""
 }
 
+Json teste Endereço
+{
+  "endereco": "",
+  "bairro": "",
+  "cidade": "",
+  "cep": "",
+  "complemento": ""
+}
+
 // PostgreSQL
 
 1 - DROP SCHEMA public CASCADE;

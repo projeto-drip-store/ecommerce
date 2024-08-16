@@ -5,7 +5,7 @@ import { getAllUsers, loginUser, registerUser } from "../Controllers/UserControl
 
 import { getAllAddress, registerAddress } from "../Controllers/AddressController.js"
 
-export const router = express.userRouter();
+export const router = express.Router();
 
 //Usuário rotas
 
