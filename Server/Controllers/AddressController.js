@@ -1,5 +1,4 @@
 import { Address } from "../Models/Address.js"
-import { UserAddress } from "../Models/User_Address.js";
 
 // GET 
 export const getAllAddress = async (req, res) => {

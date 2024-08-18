@@ -44,6 +44,8 @@ function CriarFormulario() {
       telefone: data.telefone,
     };
 
+    apiRequest('/telephone/register', 'POST', newContact);
+    
     const newAddress = {
       endereco: data.endereco,
       bairro: data.bairro,
