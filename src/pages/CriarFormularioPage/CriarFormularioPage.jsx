@@ -40,6 +40,19 @@ function CriarFormulario() {
 
     apiRequest('/user/register', 'POST', newUser);
     
+    const newContact = {
+      telefone: data.telefone,
+    };
+
+    const newAddress = {
+      endereco: data.endereco,
+      bairro: data.bairro,
+      cidade: data.cidade,
+      cep: data.cep,
+      complemento: data.complemento
+    };
+
+    apiRequest('/address/register', 'POST', newAddress);
 
     navigate("/Login", { replace: true });
   }

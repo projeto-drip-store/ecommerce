@@ -1,4 +1,5 @@
 import { Address } from "../Models/Address.js"
+import { UserAddress } from "../Models/User_Address.js";
 
 // GET 
 export const getAllAddress = async (req, res) => {
@@ -14,8 +15,8 @@ export const getAllAddress = async (req, res) => {
 
 export const registerAddress = async (req, res) => {
     try {
-        const { endereco, bairro, cidadde, cep, complemento } = req.body;
-        const address = await Address.create({ endereco, bairro, cidadde, cep, complemento });
+        const { endereco, bairro, cidade, cep, complemento } = req.body;
+        const address = await Address.create({ endereco, bairro, cidade, cep, complemento });
         res.status(201).json(address);
     } catch (error) {
         res.status(500).json({ error: error.message });

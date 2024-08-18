@@ -3,9 +3,11 @@ import express from "express";
 // CONTROLLERS
 import { getAllUsers, loginUser, registerUser } from "../Controllers/UserController.js";
 
-import { getAllAddress, registerAddress } from "../Controllers/AddressController.js"
+import { getAllAddress, registerAddress } from "../Controllers/AddressController.js";
 
-export const router = express.userRouter();
+import { getAllTelephone, registerTelephone } from "../Controllers/TelephoneController.js";
+
+export const router = express.Router();
 
 //Usuário rotas
 
@@ -17,4 +19,9 @@ router.post('/user/login', loginUser);
 
 router.get('/address', getAllAddress);
 router.post('/address/register', registerAddress);
+
+//Telefone Rotas
+
+router.get('/telephone', getAllTelephone);
+router.post('/telephone/register', registerTelephone);
 
