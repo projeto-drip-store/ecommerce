@@ -9,12 +9,28 @@ Json teste usuario
 }
 
 Json teste Endereço
+
 {
   "endereco": "",
   "bairro": "",
   "cidade": "",
   "cep": "",
   "complemento": ""
+}
+
+Json teste Telefone
+
+{
+  "telefone": ""
+}
+
+Json teste Produto
+{
+  "ativo": "",
+  "nome": "",
+  "usado_no_menu": "",
+  
+
 }
 
 // PostgreSQL

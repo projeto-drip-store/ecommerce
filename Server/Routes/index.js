@@ -19,6 +19,8 @@ import { getAllAddress, registerAddress } from "../Controllers/AddressController
 
 import { getAllTelephone, registerTelephone } from "../Controllers/TelephoneController.js";
 
+import { getAllProduct, registerProduct } from "../Controllers/ProductController.js";
+
 export const router = express.Router();
 
 //Usuário rotas
@@ -36,6 +38,9 @@ router.post('/address/register', registerAddress);
 
 router.get('/telephone', getAllTelephone);
 router.post('/telephone/register', registerTelephone);
+
+
+// Produto Rotas
 
 router.post('/register', registerUser);
 router.post('/login', loginUser);
@@ -83,3 +88,4 @@ router.get('/products/:productId/images', getImagesByProductId)
 router.get('/images/:imageId/products', getProductsByImageId);
 router.post('/product-images', createProductImage);
 router.delete('/product-images', deleteProductImage);
+

@@ -10,7 +10,7 @@ export const Product = DBconfig.define("produto", {
     allowNull: false,
     defaultValue: true,
   },
-  slug: {
+  nome: {
     type: Sequelize.STRING(100),
     allowNull: false,
     unique: true,

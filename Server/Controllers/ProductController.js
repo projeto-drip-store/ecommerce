@@ -1,5 +1,3 @@
-import { Product } from '../Models/Product.js'; 
-
 
 export const getAllProducts = async (req, res) => {
   try {
@@ -93,3 +91,4 @@ export const deleteProduct = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
