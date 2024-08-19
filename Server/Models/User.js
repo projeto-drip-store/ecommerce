@@ -18,11 +18,6 @@ export const User = DBconfig.define("usuario", {
     type: Sequelize.STRING(500), 
     allowNull: false, 
   },
-  usuario: {
-    type: Sequelize.STRING(30), 
-    allowNull: false, 
-    unique: true, 
-  },
   cpf: {
     type: Sequelize.STRING(14), 
     allowNull: false, 

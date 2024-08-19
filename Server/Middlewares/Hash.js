@@ -22,4 +22,4 @@ export const doCompare = (password, hash) => {
     console.error(`\nErro ao comparar senhas\n`, error);
     return false;
   }
-}
+};
