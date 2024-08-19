@@ -73,17 +73,29 @@ export const getProductsByCategoryId = async (req, res) => {
 
 
 export const createProductCategory = async (req, res) => {
-  const { productId, categoryId } = req.body;
+  const { produto_id, categoria_id } = req.body;
+  
+  if (!produto_id || !categoria_id) {
+    return res.status(400).json({ error: "Produto ID e Categoria ID são obrigatórios." });
+  }
 
   try {
-    const productCategory = await ProductCategory.create({
-      produto_id: productId,
-      categoria_id: categoryId,
-    });
+    const product = await Product.findByPk(produto_id);
+    const category = await Category.findByPk(categoria_id);
 
-    res.status(201).json(productCategory);
+    if (!product || !category) {
+      return res.status(404).json({ error: "Produto ou Categoria não encontrados." });
+    }
+    await ProductCategory.create({ produto_id, categoria_id });
+
+    return res.status(201).json({
+      success: true,
+      message: "Associação criada com sucesso.",
+      data: { produto_id, categoria_id }
+    });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.error('Erro ao criar a associação:', error);
+    return res.status(500).json({ error: "Erro interno do servidor." });
   }
 };
 

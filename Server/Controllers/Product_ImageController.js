@@ -1,111 +1,74 @@
+// src/controllers/Product_ImageController.js
 import { ProductImage } from '../Models/Product_Image.js';
 import { Product } from '../Models/Product.js';
 import { Image } from '../Models/Image.js';
 
-// Listar todas as associações entre produtos e imagens
+export const createProductImage = async (req, res) => {
+  try {
+    const { productId, imageId } = req.body;
+
+    const product = await Product.findByPk(productId);
+    const image = await Image.findByPk(imageId);
+
+    if (!product || !image) {
+      return res.status(404).json({ message: 'Produto ou imagem não encontrados' });
+    }
+
+    await ProductImage.create({ productId, imageId });
+
+    res.status(201).json({ message: 'Associação criada com sucesso' });
+  } catch (error) {
+    res.status(500).json({ message: 'Erro ao criar a associação', error });
+  }
+};
+
 export const getAllProductImages = async (req, res) => {
   try {
-    const productImages = await ProductImage.findAll({
-      include: [
-        {
-          model: Product,
-          as: 'products',
-        },
-        {
-          model: Image,
-          as: 'images',
-        }
-      ]
-    });
+    const productImages = await ProductImage.findAll();
     res.status(200).json(productImages);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ message: 'Erro ao buscar associações de produto e imagem', error });
   }
 };
 
-// Listar as imagens associadas a um produto específico
+// Obtenção de imagens por ID do produto
 export const getImagesByProductId = async (req, res) => {
-  const { productId } = req.params;
-
   try {
-    const product = await Product.findByPk(productId, {
-      include: [
-        {
-          model: Image,
-          as: 'images'
-        }
-      ]
-    });
+    const { productId } = req.params;
+    const product = await Product.findByPk(productId, { include: Image });
 
     if (!product) {
-      return res.status(404).json({ error: 'Produto não encontrado' });
+      return res.status(404).json({ message: 'Produto não encontrado' });
     }
 
-    res.status(200).json(product.images);
+    res.status(200).json(product.Images); 
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ message: 'Erro ao buscar imagens do produto', error });
   }
 };
 
-// Listar os produtos associados a uma imagem específica
 export const getProductsByImageId = async (req, res) => {
-  const { imageId } = req.params;
-
   try {
-    const image = await Image.findByPk(imageId, {
-      include: [
-        {
-          model: Product,
-          as: 'products'
-        }
-      ]
-    });
+    const { imageId } = req.params;
+    const image = await Image.findByPk(imageId, { include: Product });
 
     if (!image) {
-      return res.status(404).json({ error: 'Imagem não encontrada' });
+      return res.status(404).json({ message: 'Imagem não encontrada' });
     }
 
-    res.status(200).json(image.products);
+    res.status(200).json(image.Products); 
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ message: 'Erro ao buscar produtos da imagem', error });
   }
 };
 
-// Associar um produto a uma imagem
-export const createProductImage = async (req, res) => {
-  const { productId, imageId } = req.body;
-
-  try {
-    const productImage = await ProductImage.create({
-      produto_id: productId,
-      imagem_id: imageId,
-    });
-
-    res.status(201).json(productImage);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-};
-
-// Remover uma associação entre produto e imagem
 export const deleteProductImage = async (req, res) => {
-  const { productId, imageId } = req.body;
-
   try {
-    const productImage = await ProductImage.findOne({
-      where: {
-        produto_id: productId,
-        imagem_id: imageId,
-      }
-    });
-
-    if (!productImage) {
-      return res.status(404).json({ error: 'Associação não encontrada' });
-    }
-
-    await productImage.destroy();
-    res.status(200).json({ message: 'Associação removida com sucesso' });
+    const { id } = req.params;
+    const deleted = await ProductImage.destroy({ where: { id } });
+    if (!deleted) return res.status(404).json({ message: 'Associação não encontrada' });
+    res.status(204).send(); 
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ message: 'Erro ao deletar a associação', error });
   }
 };
