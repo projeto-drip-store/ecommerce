@@ -1,7 +1,5 @@
-// controllers/CategoryController.js
-import { Category } from "../Models/Category.js";
 
-// import { ProductCategory } from "../Models/Product_Category.js";
+import { Category } from "../Models/Category.js";
 
 //POST
 export const createCategory = async (req, res) => {
@@ -75,23 +73,3 @@ export const getCategoryById = async (req, res) => {
     }
 };
 
-//POST
-// export const addProductToCategory = async (req, res) => {
-//   const { categoryId, productId } = req.body
-
-//   try {
-//     const category = await Category.findByPk(categoryId)
-//     const product = await Product.findByPk(productId)
-
-//     if (!category || !product) {
-//       res.status(404).json({ message: "Categoria ou produto não encontrado" })
-//       return
-//     }
-
-//     await category.addProduct(product);
-
-//     res.status(201).json({ message: "Product adiconado" })
-//   } catch (error) {
-//     res.status(500).json({ error: error.message })
-//   }
-// };

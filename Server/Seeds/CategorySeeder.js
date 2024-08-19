@@ -1,19 +1,31 @@
-// import { Brand, Category } from '../Models'; // Importar os modelos Brand e Category
+import { Brand } from '../Models/Brand.js';      
+import { Category } from '../Models/Category.js'
 
-// const seed = async () => {
-//   try {
-//     // Criação de marcas
-//     const brands = ['Adidas', 'Calenciaga', 'K-swiss', 'Nike', 'Puma'];
-//     await Promise.all(brands.map(brandName => Brand.create({ name: brandName })));
+const seed = async () => {
+  try {
+    const brands = ['Adidas', 'Calenciaga', 'K-swiss', 'Nike', 'Puma'];
+    await Promise.all(brands.map(brandName =>
+      Brand.create({ nome: brandName })
+    ));
 
-//     // Criação de categorias
-//     const categories = ['Esporte e Lazer', 'Casual', 'Utilitário', 'Corrida'];
-//     await Promise.all(categories.map(categoryName => Category.create({ name: categoryName })));
+    const categories = [
+      { nome: 'Esporte e Lazer', usa_no_menu: true },
+      { nome: 'Casual', usa_no_menu: true },
+      { nome: 'Utilitário', usa_no_menu: false },
+      { nome: 'Corrida', usa_no_menu: true },
+      { nome: 'Camisetas', usa_no_menu: true },
+      { nome: 'Calças', usa_no_menu: true },
+      { nome: 'Bonés', usa_no_menu: false },
+      { nome: 'Headphones', usa_no_menu: false },
+      { nome: 'Tênis', usa_no_menu: true }
+    ];
+    await Promise.all(categories.map(category =>
+      Category.create(category)
+    ));
 
-//     console.log('Dados inseridos com sucesso!');
-//   } catch (error) {
-//     console.error('Erro ao povoar o banco de dados:', error);
-//   }
-// };
-
-// seed(); // Executar a função de seeding
+    console.log('Dados inseridos com sucesso!');
+  } catch (error) {
+    console.error('Erro ao povoar o banco de dados:', error);
+  }
+};
+seed(); 
